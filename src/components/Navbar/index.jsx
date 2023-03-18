@@ -14,14 +14,14 @@ export const Navbar = () => {
           </Link>
         ))}
         <Contact>
-          <Contact.User>Webbrain Academy</Contact.User>
-          <a href="https://t.me/webbrain_academy">
+          <Contact.User>Sardor Tursunboyev</Contact.User>
+          <a href="https://t.me/Sardor0795">
             <Contact.Telegram />
           </a>
-          <a href="https://youtube.com/c/webbrainacademy">
+          <a href="https://www.youtube.com/channel/UCZUkdjzZrQseqqqKj0JOZMg">
             <Contact.Youtube />
           </a>
-          <a href="https://github.com/webbrain">
+          <a href="https://github.com/Sardor0795">
             <Contact.Git />
           </a>
         </Contact>
