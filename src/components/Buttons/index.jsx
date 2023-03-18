@@ -1,10 +1,15 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import { Container } from "./style";
+import Button from "./Button";
 
-const Generic = () => {
+export const Generic = () => {
+  const location = useLocation();
   return (
     <Container>
-      <Button>Submit</Button>
+      <Button type="loading">Submit</Button>
+      <Button type="primary">Submit</Button>
+      <Button type="dashshed">Submit</Button>
     </Container>
   );
 };

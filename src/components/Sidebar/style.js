@@ -5,7 +5,6 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 300px;
-  min-width: 300px;
   width: 100%;
   box-shadow: var(--shadow);
   padding: 0 25px;
@@ -20,7 +19,7 @@ const Container = styled.div`
 const Wrapper = styled.div`
   display: flex;
   height: calc(100vh - var(--navbar-height));
-  overflow-y: auto;
+  overflow: scroll;
 `;
 const Body = styled.div`
   display: flex;

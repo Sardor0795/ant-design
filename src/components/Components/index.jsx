@@ -1,13 +1,12 @@
 import React from "react";
+import { useLocation, Outlet } from "react-router-dom";
 import { Container } from "./style";
-import { useLocation } from "react-router-dom";
-import Sidebar from "../Sidebar";
 
-const Generic = () => {
+export const Generic = () => {
   const location = useLocation();
   return (
     <Container>
-      <Sidebar />
+      <Outlet />
       <h1>Generic {location.pathname} coming soon</h1>
     </Container>
   );

@@ -1,8 +1,8 @@
 import React from "react";
-import { Container } from "./style";
 import { useLocation } from "react-router-dom";
+import { Container } from "./style";
 
-const Generic = () => {
+export const Generic = () => {
   const location = useLocation();
   return (
     <Container>
