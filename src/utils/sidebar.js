@@ -1,5 +1,5 @@
 import Generic from "../components/Generic";
-import Buttons from '../components/Buttons'
+import Buttons from "../components/Buttons";
 
 export const sidebar = [
   {
@@ -13,6 +13,186 @@ export const sidebar = [
     id: 3,
     title: "Dropdown",
     path: "/components/dropdown",
+    element: <Generic />,
+  },
+  {
+    id: 4,
+    title: "Tooltip",
+    path: "/components/tooltip",
+    element: <Generic />,
+  },
+  {
+    id: 5,
+    title: "Menu",
+    path: "/components/menu",
+    element: <Generic />,
+  },
+  {
+    id: 6,
+    title: "Steps",
+    path: "/components/steps",
+    element: <Generic />,
+  },
+  {
+    id: 7,
+    title: "Calendar",
+    path: "/components/calendar",
+    element: <Generic />,
+  },
+  {
+    id: 8,
+    title: "Maps",
+    path: "/components/maps",
+    element: <Generic />,
+  },
+  {
+    id: 9,
+    title: "Charts",
+    path: "/components/charts",
+    element: <Generic />,
+  },
+  {
+    id: 10,
+    title: "Checkbox",
+    path: "/components/checkbox",
+    element: <Generic />,
+  },
+  {
+    id: 11,
+    title: "Forms",
+    path: "/components/forms",
+    element: <Generic />,
+  },
+  {
+    id: 12,
+    title: "DatePicker",
+    path: "/components/datepicker",
+    element: <Generic />,
+  },
+  {
+    id: 13,
+    title: "Switch",
+    path: "/components/switch",
+    element: <Generic />,
+  },
+  {
+    id: 14,
+    title: "Transfer",
+    path: "/components/transfer",
+    element: <Generic />,
+  },
+  {
+    id: 15,
+    title: "Upload",
+    path: "/components/upload",
+    element: <Generic />,
+  },
+  {
+    id: 16,
+    title: "Avatar",
+    path: "/components/avatar",
+    element: <Generic />,
+  },
+  {
+    id: 17,
+    title: "Badge",
+    path: "/components/badge",
+    element: <Generic />,
+  },
+  {
+    id: 18,
+    title: "Card",
+    path: "/components/card",
+    element: <Generic />,
+  },
+  {
+    id: 19,
+    title: "Carousel",
+    path: "/components/carousel",
+    element: <Generic />,
+  },
+  {
+    id: 20,
+    title: "Collapse",
+    path: "/components/collapse",
+    element: <Generic />,
+  },
+  {
+    id: 21,
+    title: "Image",
+    path: "/components/image",
+    element: <Generic />,
+  },
+  {
+    id: 22,
+    title: "Pagination",
+    path: "/components/pagination",
+    element: <Generic />,
+  },
+  {
+    id: 23,
+    title: "Popover",
+    path: "/components/popover",
+    element: <Generic />,
+  },
+  {
+    id: 24,
+    title: "Table",
+    path: "/components/table",
+    element: <Generic />,
+  },
+  {
+    id: 25,
+    title: "Tabs",
+    path: "/components/tabs",
+    element: <Generic />,
+  },
+  {
+    id: 26,
+    title: "Alert",
+    path: "/components/alert",
+    element: <Generic />,
+  },
+  {
+    id: 27,
+    title: "Drawer",
+    path: "/components/drawer",
+    element: <Generic />,
+  },
+  {
+    id: 28,
+    title: "Modal",
+    path: "/components/modal",
+    element: <Generic />,
+  },
+  {
+    id: 29,
+    title: "Notification",
+    path: "/components/notification",
+    element: <Generic />,
+  },
+  {
+    id: 30,
+    title: "PopConfirm",
+    path: "/components/popconfirm",
+    element: <Generic />,
+  },
+  {
+    id: 31,
+    title: "Progress",
+    path: "/components/progress",
+    element: <Generic />,
+  },
+  {
+    id: 32,
+    title: "Result",
+    path: "/components/result",
+    element: <Generic />,
+  },
+  {
+    id: 33,
+    title: "Spinner",
+    path: "/components/spinner",
     element: <Generic />,
   },
 ];
