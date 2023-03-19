@@ -4,6 +4,13 @@ import Buttons from "../components/Buttons";
 import HourImg from "../assets/icons/hour.jpg";
 import CheckImg from "../assets/icons/check.png";
 import { Progress } from "../components/Progress";
+import { Inputs } from "../components/Inputs";
+import { Alert } from "../components/Alert";
+import { Badge } from "../components/Badge";
+import { Checkbox } from "../components/Checkbox";
+import { Dropdown } from "../components/Dropdown";
+import { Table } from "../components/Table";
+import { Tooltip } from "../components/Tooltip";
 
 export const sidebar = [
   {
@@ -19,28 +26,28 @@ export const sidebar = [
     id: 2,
     title: "Inputs",
     path: "/components/inputs",
-    element: <Generic />,
+    element: <Inputs />,
     imgHour: HourImg,
     imgCheck: CheckImg,
-    fulfilled: false,
+    fulfilled: true,
   },
   {
     id: 3,
     title: "Dropdown",
     path: "/components/dropdown",
-    element: <Generic />,
+    element: <Dropdown />,
     imgHour: HourImg,
     imgCheck: CheckImg,
-    fulfilled: false,
+    fulfilled: true,
   },
   {
     id: 4,
     title: "Tooltip",
     path: "/components/tooltip",
-    element: <Generic />,
+    element: <Tooltip />,
     imgHour: HourImg,
     imgCheck: CheckImg,
-    fulfilled: false,
+    fulfilled: true,
   },
   {
     id: 5,
@@ -91,10 +98,10 @@ export const sidebar = [
     id: 10,
     title: "Checkbox",
     path: "/components/checkbox",
-    element: <Generic />,
+    element: <Checkbox />,
     imgHour: HourImg,
     imgCheck: CheckImg,
-    fulfilled: false,
+    fulfilled: true,
   },
   {
     id: 11,
@@ -154,10 +161,10 @@ export const sidebar = [
     id: 17,
     title: "Badge",
     path: "/components/badge",
-    element: <Generic />,
+    element: <Badge />,
     imgHour: HourImg,
     imgCheck: CheckImg,
-    fulfilled: false,
+    fulfilled: true,
   },
   {
     id: 18,
@@ -217,10 +224,10 @@ export const sidebar = [
     id: 24,
     title: "Table",
     path: "/components/table",
-    element: <Generic />,
+    element: <Table />,
     imgHour: HourImg,
     imgCheck: CheckImg,
-    fulfilled: false,
+    fulfilled: true,
   },
   {
     id: 25,
@@ -235,10 +242,10 @@ export const sidebar = [
     id: 26,
     title: "Alert",
     path: "/components/alert",
-    element: <Generic />,
+    element: <Alert />,
     imgHour: HourImg,
     imgCheck: CheckImg,
-    fulfilled: false,
+    fulfilled: true,
   },
   {
     id: 27,

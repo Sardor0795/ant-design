@@ -44,3 +44,7 @@ a {
   --dark: #343a40ff;
   --white: #ffffffff;
 }
+
+a {
+  user-select: none;
+}
