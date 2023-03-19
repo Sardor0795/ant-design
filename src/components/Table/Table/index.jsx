@@ -222,7 +222,7 @@ class ScrollableTable extends Component {
                 )
               ) : (
                 <tr>
-                  <td>No Data</td>
+                  <td colSpan="8">No Data</td>
                 </tr>
               )}
             </tbody>
