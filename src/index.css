@@ -7,6 +7,14 @@
   box-sizing: border-box;
 }
 
+img {
+  display: block;
+}
+
+a {
+  display: inline-block;
+}
+
 :root {
   --sidebar-width: 290px;
   --navbar-height: 67px;
@@ -23,4 +31,3 @@
   --dangerBorder: 1px solid #ff4d4f;
   --dangerColor: #ff4d4f;
 }
-

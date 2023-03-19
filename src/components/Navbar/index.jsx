@@ -1,11 +1,20 @@
 import React from "react";
 
 import { navbar } from "../../utils/navbar";
-import { Contact, Container, Link, User, Wrapper } from "./style";
+import {
+  Contact,
+  Container,
+  Link,
+  SocialLink,
+  User,
+  UserMainImg,
+  Wrapper,
+} from "./style";
 
 export const Navbar = () => {
   return (
     <Container>
+      <UserMainImg />
       <User path="/components">Antd Library</User>
       <Wrapper>
         {navbar.map((value) => (
@@ -15,15 +24,18 @@ export const Navbar = () => {
         ))}
         <Contact>
           <Contact.User>Sardor Tursunboyev</Contact.User>
-          <a href="https://t.me/Sardor0795">
+          <SocialLink target="_blank" href="https://t.me/Sardor0795">
             <Contact.Telegram />
-          </a>
-          <a href="https://www.youtube.com/channel/UCZUkdjzZrQseqqqKj0JOZMg">
+          </SocialLink>
+          <SocialLink
+            target="_blank"
+            href="https://www.youtube.com/channel/UCZUkdjzZrQseqqqKj0JOZMg"
+          >
             <Contact.Youtube />
-          </a>
-          <a href="https://github.com/Sardor0795">
+          </SocialLink>
+          <SocialLink target="_blank" href="https://github.com/Sardor0795">
             <Contact.Git />
-          </a>
+          </SocialLink>
         </Contact>
       </Wrapper>
     </Container>

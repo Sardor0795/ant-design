@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { ReactComponent as tg } from "../../assets/icons/tg.svg";
 import { ReactComponent as yt } from "../../assets/icons/yt.svg";
 import { ReactComponent as git } from "../../assets/icons/git.svg";
+import UserImg from "../../assets/img/user_img.jpg";
 
 const Container = styled.div`
   display: flex;
@@ -20,6 +21,24 @@ const Container = styled.div`
   }
 `;
 
+export const UserMainImg = styled.div`
+  border-radius: 50%;
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  background-image: url("${UserImg}");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-left: 25px;
+`;
+
+export const SocialLink = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 const Link = styled(NavLink)`
   color: var(--color);
   text-decoration: none;
@@ -32,7 +51,7 @@ const User = styled(NavLink)`
   font-size: 28px;
   max-width: 300px;
   width: 100%;
-  padding-left: 25px;
+  padding-left: 15px;
   border-right: var(--border);
 `;
 
