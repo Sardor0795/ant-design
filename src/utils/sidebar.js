@@ -3,6 +3,7 @@ import Buttons from "../components/Buttons";
 
 import HourImg from "../assets/icons/hour.jpg";
 import CheckImg from "../assets/icons/check.png";
+import { Progress } from "../components/Progress";
 
 export const sidebar = [
   {
@@ -279,10 +280,10 @@ export const sidebar = [
     id: 31,
     title: "Progress",
     path: "/components/progress",
-    element: <Generic />,
+    element: <Progress />,
     imgHour: HourImg,
     imgCheck: CheckImg,
-    fulfilled: false,
+    fulfilled: true,
   },
   {
     id: 32,
