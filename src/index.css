@@ -27,8 +27,20 @@ a {
   --primaryBgColor: #2e66b6;
   --primaryColor: #fff;
   /* dashed */
-  --borderDashed: 1px solid #fff;
+  --borderDashed: 1px dashed #343a40ff;
   /* danger */
   --dangerBorder: 1px solid #ff4d4f;
   --dangerColor: #ff4d4f;
+
+  /* Main Colors */
+
+  --primary: #007bffff;
+  --secondary: #6c757dff;
+  --success: #28a745ff;
+  --danger: #dc3545ff;
+  --warning: #ffc107ff;
+  --info: #17a2b8ff;
+  --light: #f8f9faff;
+  --dark: #343a40ff;
+  --white: #ffffffff;
 }

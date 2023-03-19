@@ -38,15 +38,39 @@ const getColor = ({ type }) => {
       };
     case "dashed":
       return {
-        color: "var(--primaryColor)",
+        color: "var(--dark)",
         background: "var(--primaryColor)",
         border: "var(--borderDashed)",
       };
     case "danger":
       return {
-        color: "var(--dangerColor)",
-        background: "#fff",
+        color: "var(--white)",
+        background: "var(--danger)",
         border: "var(--dangerBorder)",
+      };
+    case "warning":
+      return {
+        color: "var(--white)",
+        background: "var(--warning)",
+        border: "none",
+      };
+    case "secondary":
+      return {
+        color: "var(--white)",
+        background: "var(--secondary)",
+        border: "none",
+      };
+    case "info":
+      return {
+        color: "var(--white)",
+        background: "var(--info)",
+        border: "none",
+      };
+    case "link":
+      return {
+        color: "var(--primary)",
+        background: "var(--white)",
+        border: "none",
       };
     default:
       return {};
