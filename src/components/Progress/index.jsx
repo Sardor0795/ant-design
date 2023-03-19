@@ -1,4 +1,6 @@
 import React from "react";
+import Card from "../Card";
+import { LayoutContainer, LayoutWrapper } from "../Layout/style";
 import { ProgressList, ProgressText, ProgressTitle } from "./style";
 
 export const Progress = () => {
@@ -22,6 +24,16 @@ export const Progress = () => {
           When you need to display the completion percentage of an operation.
         </li>
       </ProgressList>
+
+      <LayoutWrapper>
+        <LayoutContainer>
+          <Card type="Type" desc="Desc"></Card>
+          <Card type="Type" desc="Desc"></Card>
+        </LayoutContainer>
+        <LayoutContainer>
+          <Card type="Type" desc="Desc"></Card>
+        </LayoutContainer>
+      </LayoutWrapper>
     </div>
   );
 };

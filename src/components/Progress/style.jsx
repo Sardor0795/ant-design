@@ -17,4 +17,5 @@ export const ProgressText = styled.p`
 
 export const ProgressList = styled.ul`
   list-style-type: circle;
+  margin-bottom: 50px;
 `;
