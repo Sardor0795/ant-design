@@ -21,9 +21,9 @@ const Container = styled.div`
     padding-left: 30px;
     border-right: 2px solid green;
     border-left: 2px solid green;
-    & img {
+    /* & img {
       display: none;
-    }
+    } */
   }
   &.scroll-close::-webkit-scrollbar {
     width: 0;
@@ -88,7 +88,7 @@ const Link = styled(NavLink)`
   font-weight: bold;
   width: fit-content;
   opacity: 0.7;
-  transition: 0.3s padding ease;
+  transition: 0.2s padding ease;
   display: flex;
   align-items: center;
   :hover {

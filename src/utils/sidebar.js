@@ -11,6 +11,7 @@ import { Checkbox } from "../components/Checkbox";
 import { Dropdown } from "../components/Dropdown";
 import { Table } from "../components/Table";
 import { Tooltip } from "../components/Tooltip";
+import { Switch } from "../components/Switchs";
 
 export const sidebar = [
   {
@@ -125,7 +126,7 @@ export const sidebar = [
     id: 13,
     title: "Switch",
     path: "/components/switch",
-    element: <Generic />,
+    element: <Switch />,
     imgHour: HourImg,
     imgCheck: CheckImg,
     fulfilled: false,
