@@ -23,9 +23,9 @@ const Container = styled.div`
 
 export const UserMainImg = styled.div`
   border-radius: 50%;
-  width: 40px;
-  min-width: 40px;
-  height: 40px;
+  width: 35px;
+  min-width: 35px;
+  height: 35px;
   background-image: url("${UserImg}");
   background-size: cover;
   background-repeat: no-repeat;
@@ -42,13 +42,13 @@ export const SocialLink = styled.a`
 const Link = styled(NavLink)`
   color: var(--color);
   text-decoration: none;
-  font-size: 18px;
+  font-size: 15px;
   width: fit-content;
 `;
 const User = styled(NavLink)`
   color: var(--color);
   text-decoration: none;
-  font-size: 28px;
+  font-size: 20px;
   max-width: 235px;
   width: 100%;
   padding-left: 15px;
@@ -63,16 +63,20 @@ const Contact = styled.div`
 `;
 
 Contact.User = styled.div`
-  font-size: 20px;
+  font-size: 16px;
+  margin-right: 10px;
 `;
 Contact.Telegram = styled(tg)`
   cursor: pointer;
+  width: 18px;
 `;
 Contact.Youtube = styled(yt)`
   cursor: pointer;
+  width: 23px;
 `;
 Contact.Git = styled(git)`
   cursor: pointer;
+  width: 23px;
 `;
 
 const Wrapper = styled.div`

@@ -17,8 +17,8 @@ const Container = styled.div`
     opacity: 1;
     font-weight: 900;
     color: #08080b;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
     border-right: 2px solid green;
     border-left: 2px solid green;
   }
@@ -49,7 +49,7 @@ const Wrapper = styled.div`
   /* overflow: scroll; */
 `;
 const Body = styled.div`
-  display: flex;
+  /* display: flex; */
   margin: 25px;
   padding: 25px;
   box-shadow: var(--shadow);

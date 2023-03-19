@@ -15,6 +15,7 @@ export const Title = styled.h1`
   margin: 25px;
   padding: 25px;
   border-radius: 4px;
+  font-size: 25px;
 `;
 
 export { Container };
