@@ -16,7 +16,7 @@ const Container = styled.div`
   .active {
     opacity: 1;
     font-weight: 900;
-    color: #08080b;
+    color: green;
     padding-right: 30px;
     padding-left: 30px;
     border-right: 2px solid green;
@@ -49,13 +49,33 @@ const Wrapper = styled.div`
   /* overflow: scroll; */
 `;
 const Body = styled.div`
-  /* display: flex; */
   margin: 25px;
   padding: 25px;
   box-shadow: var(--shadow);
   width: 100%;
   max-width: 100%;
   border-radius: 8px;
+  overflow-y: auto;
+  &.scroll-close::-webkit-scrollbar {
+    width: 0;
+  }
+
+  &::-webkit-scrollbar {
+    width: 2px;
+    border-radius: 25px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    /* Foreground */
+    background: green;
+    border-radius: 25px;
+  }
+
+  &::-webkit-scrollbar-track {
+    /* Background */
+    background: rgba(225, 220, 220, 0.845);
+    border-radius: 25px;
+  }
 `;
 
 const Link = styled(NavLink)`

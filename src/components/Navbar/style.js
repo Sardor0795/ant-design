@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link as PlainLink } from "react-router-dom";
 import styled from "styled-components";
 import { ReactComponent as tg } from "../../assets/icons/tg.svg";
 import { ReactComponent as yt } from "../../assets/icons/yt.svg";
@@ -14,9 +14,12 @@ const Container = styled.div`
   position: sticky;
   top: 0;
   z-index: 999;
+  font-weight: bold;
   background-color: white;
+  color: #494b71;
   .active {
-    color: #08080b;
+    /* color: #08080b; */
+    color: green;
     font-weight: 900;
   }
 `;
@@ -45,7 +48,7 @@ const Link = styled(NavLink)`
   font-size: 15px;
   width: fit-content;
 `;
-const User = styled(NavLink)`
+const User = styled(PlainLink)`
   color: var(--color);
   text-decoration: none;
   font-size: 20px;

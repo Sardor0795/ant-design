@@ -18,6 +18,30 @@ const Buttons = () => {
       <Card type="Danger" desc={"Danger Button"}>
         <Button type="danger">Danger</Button>
       </Card>
+      <Card type="Danger" desc={"Danger Button"}>
+        <Button type="danger">Danger</Button>
+      </Card>
+      <Card type="Danger" desc={"Danger Button"}>
+        <Button type="danger">Danger</Button>
+      </Card>
+      <Card type="Danger" desc={"Danger Button"}>
+        <Button type="danger">Danger</Button>
+      </Card>
+      <Card type="Danger" desc={"Danger Button"}>
+        <Button type="danger">Danger</Button>
+      </Card>
+      <Card type="Danger" desc={"Danger Button"}>
+        <Button type="danger">Danger</Button>
+      </Card>
+      <Card type="Danger" desc={"Danger Button"}>
+        <Button type="danger">Danger</Button>
+      </Card>
+      <Card type="Danger" desc={"Danger Button"}>
+        <Button type="danger">Danger</Button>
+      </Card>
+      <Card type="Danger" desc={"Danger Button"}>
+        <Button type="danger">Danger</Button>
+      </Card>
     </Container>
   );
 };
