@@ -11,18 +11,18 @@ const Card = ({ type = "Unknown", children, desc }) => {
     <Container>
       <Header>{children}</Header>
       <Body>
-        <legend>{type}</legend>
+        <legend style={{ fontWeight: "bold" }}>{type}</legend>
         {desc}
       </Body>
       <Footer>
         <FooterLink target="_blank" href="https://t.me/Sardor0795">
-          <img style={{ width: "100%" }} src={TgImg} alt="tg img" />
+          <img style={{ width: "22px" }} src={TgImg} alt="tg img" />
         </FooterLink>
         <FooterLink target="_blank" href="https://github.com/Sardor0795">
           <img style={{ width: "100%" }} src={YtImg} alt="tg img" />
         </FooterLink>
         <FooterLink href="#">
-          <img style={{ width: "100%" }} src={CopyImg} alt="tg img" />
+          <img style={{ width: "18px" }} src={CopyImg} alt="tg img" />
         </FooterLink>
         <FooterLink href="#">
           <img style={{ width: "100%" }} src={CodeImg} alt="tg img" />

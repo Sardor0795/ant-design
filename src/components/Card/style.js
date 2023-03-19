@@ -40,9 +40,14 @@ export const FooterLink = styled.a`
   align-items: center;
   justify-content: center;
   display: inline-block;
-  width: 15px;
-  margin-right: 10px;
-  margin-left: 10px;
+  width: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
+  transition: opacity 0.3s ease;
+  opacity: 0.5;
+  :hover {
+    opacity: 1;
+  }
 `;
 
 export { Container };
