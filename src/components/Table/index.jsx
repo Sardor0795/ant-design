@@ -1,16 +1,14 @@
 import React from "react";
 import Card from "../Card";
-import { LayoutContainer, LayoutWrapper } from "../Layout/style";
+import { LayoutWrapper } from "../Layout/style";
+import ScrollableTable from "./Table";
 
 export const Table = () => {
   return (
     <LayoutWrapper>
-      <LayoutContainer>
-        <Card></Card>
-      </LayoutContainer>
-      <LayoutContainer>
-        <Card></Card>
-      </LayoutContainer>
+      <Card type="Table" desc={'Scrollable and Editable Table'}>
+        <ScrollableTable />
+      </Card>
     </LayoutWrapper>
   );
 };
