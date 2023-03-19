@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const LayoutWrapper = styled.div`
   width: 100%;
   display: flex;
+  align-items: flex-start;
   gap: 25px;
 `;
 
