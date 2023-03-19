@@ -1,4 +1,14 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+`;
 
 const checkPx = (type) => {
   return `${parseFloat(type)}px`;
@@ -43,7 +53,7 @@ const getColor = ({ type }) => {
   }
 };
 
-const Container = styled.button`
+export const Container = styled.button`
   font-size: ${getSize};
   width: ${({ width }) => (width ? checkPx(width) : "125px")};
   border-radius: ${({ borderRadius }) =>
@@ -56,8 +66,16 @@ const Container = styled.button`
     transform: translateY(2px);
   }
   :focus {
+    & img {
+      display: block;
+      animation: ${rotate} 2s linear infinite;
+    }
     opacity: 0.8;
   }
 `;
 
-export { Container };
+export const LoadImage = styled.img`
+  width: 20px;
+  margin-right: 10px;
+  display: none;
+`;
