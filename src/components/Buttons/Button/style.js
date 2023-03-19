@@ -78,6 +78,9 @@ const getColor = ({ type }) => {
 };
 
 export const Container = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: ${getSize};
   width: ${({ width }) => (width ? checkPx(width) : "125px")};
   border-radius: ${({ borderRadius }) =>
@@ -92,7 +95,8 @@ export const Container = styled.button`
   :focus {
     & img {
       display: block;
-      animation: ${rotate} 2s linear infinite;
+      animation: ${({ type }) => (type !== "info" ? rotate : null)} 2s linear
+        infinite;
     }
     opacity: 0.8;
   }

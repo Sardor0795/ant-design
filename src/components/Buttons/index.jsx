@@ -4,6 +4,7 @@ import { Container, Wrapper } from "./style";
 import Button from "./Button";
 import LoadImg from "../../assets/icons/loader.png";
 import { LoadImage } from "./Button/style";
+import DownloadImg from "../../assets/icons/btn_download.svg";
 
 const Buttons = () => {
   return (
@@ -77,12 +78,89 @@ const Buttons = () => {
       <Container>
         <Card type="Dashed" desc={"Dashed Button"}>
           <Button type="dashed">Dashed</Button>
-          <Button type="dashed">Dashed</Button>
-          <Button type="dashed">Dashed</Button>
-          <Button type="dashed">Dashed</Button>
+          <Button
+            style={{ borderColor: "var(--danger)", color: "var(--danger)" }}
+            type="dashed"
+          >
+            Danger
+          </Button>
+          <Button
+            style={{ borderColor: "var(--info)", color: "var(--info)" }}
+            type="dashed"
+          >
+            Info
+          </Button>
+          <Button
+            style={{ borderColor: "var(--warning)", color: "var(--warning)" }}
+            type="dashed"
+          >
+            Warning
+          </Button>
         </Card>
-        <Card type="Danger" desc={"Danger Button"}>
-          <Button type="danger">Danger</Button>
+        <Card
+          type="Download Button"
+          desc={
+            "Ant Design supports a default button size as well as a large and small size. If a large or small button is desired, set the size property to either large or small respectively. Omit the size property for a button with the default size."
+          }
+        >
+          <Button type="info">
+            <img
+              style={{
+                width: "15px",
+                filter: `grayscale(0) invert(1)`,
+                marginRight: "10px",
+              }}
+              src={DownloadImg}
+              alt="img"
+            />
+            Download
+          </Button>
+          <Button
+            style={{ fontSize: "0", borderRadius: "50%" }}
+            width="40px"
+            height="40px"
+            type="info"
+          >
+            <img
+              style={{
+                width: "15px",
+                filter: `grayscale(0) invert(1)`,
+                marginRight: "0",
+              }}
+              src={DownloadImg}
+              alt="img"
+            />
+            Download
+          </Button>
+          <Button
+            style={{ fontSize: "0", borderRadius: "15px" }}
+            width="40px"
+            height="40px"
+            type="info"
+          >
+            <img
+              style={{
+                width: "15px",
+                filter: `grayscale(0) invert(1)`,
+                marginRight: "0",
+              }}
+              src={DownloadImg}
+              alt="img"
+            />
+            Download
+          </Button>
+          <Button style={{ fontSize: "0" }} width="50px" type="info">
+            <img
+              style={{
+                width: "15px",
+                filter: `grayscale(0) invert(1)`,
+                marginRight: "0",
+              }}
+              src={DownloadImg}
+              alt="img"
+            />
+            Download
+          </Button>
         </Card>
         <Card type="Danger" desc={"Danger Button"}>
           <Button type="danger">Danger</Button>
