@@ -49,7 +49,7 @@ const User = styled(NavLink)`
   color: var(--color);
   text-decoration: none;
   font-size: 28px;
-  max-width: 300px;
+  max-width: 235px;
   width: 100%;
   padding-left: 15px;
   border-right: var(--border);
