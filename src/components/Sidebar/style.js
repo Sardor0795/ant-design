@@ -17,6 +17,10 @@ const Container = styled.div`
     opacity: 1;
     font-weight: 900;
     color: #08080b;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 2px solid green;
+    border-left: 2px solid green;
   }
   &.scroll-close::-webkit-scrollbar {
     width: 0;
@@ -60,6 +64,7 @@ const Link = styled(NavLink)`
   font-size: 18px;
   width: fit-content;
   opacity: 0.7;
+  transition: 0.3s padding ease;
   :hover {
     opacity: 1;
   }
