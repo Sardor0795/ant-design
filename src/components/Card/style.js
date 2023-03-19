@@ -5,6 +5,11 @@ const Container = styled.div`
   flex-direction: column;
   width: 100%;
   border: var(--border);
+  transition: box-shadow 0.3s ease;
+  :hover {
+    box-shadow: var(--shadow);
+    cursor: pointer;
+  }
 `;
 
 export const Header = styled.div`
