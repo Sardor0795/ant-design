@@ -61,7 +61,8 @@ const Body = styled.div`
 const Link = styled(NavLink)`
   color: var(--color);
   text-decoration: none;
-  font-size: 18px;
+  font-size: 14px;
+  font-weight: bold;
   width: fit-content;
   opacity: 0.7;
   transition: 0.3s padding ease;
