@@ -48,11 +48,45 @@ export class Progress extends React.Component {
         <LayoutWrapper>
           <LayoutContainer>
             <Card type="basic with sizes" desc="small medium and large sizes.">
-              <ProgressMaker progress="70" size="small" type="line" />
-              <ProgressMaker progress="30" size="medium" type="line" />
-              <ProgressMaker progress="80" size="large" type="line" />
+              <ProgressMaker
+                bgcolor="primary"
+                progress="70"
+                size="small"
+                type="line"
+              />
+              <ProgressMaker
+                bgcolor="primary"
+                progress="30"
+                size="medium"
+                type="line"
+              />
+              <ProgressMaker
+                bgcolor="primary"
+                progress="80"
+                size="large"
+                type="line"
+              />
             </Card>
-            <Card type="Type" desc="Desc"></Card>
+            <Card type="basic with status" desc="active, success and exception statuses.">
+              <ProgressMaker
+                bgcolor="warning"
+                progress="40"
+                size="large"
+                type="line"
+              />
+              <ProgressMaker
+                bgcolor="info"
+                progress="68"
+                size="large"
+                type="line"
+              />
+              <ProgressMaker
+                bgcolor="danger"
+                progress="95"
+                size="large"
+                type="line"
+              />
+            </Card>
           </LayoutContainer>
           <LayoutContainer>
             <Card
@@ -60,7 +94,8 @@ export class Progress extends React.Component {
               desc="dynamically increasing or decreasing the value"
             >
               <ProgressMaker
-                progress={this.state.lineProgress}
+                bgcolor="primary"
+                progress={`${this.state.lineProgress}`}
                 size="large"
                 type="line"
               />

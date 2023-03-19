@@ -16,6 +16,32 @@ const getType = ({ type }) => {
   }
 };
 
+const getBgColor = ({ bgcolor }) => {
+  bgcolor = `${bgcolor}`.toLowerCase();
+  switch (bgcolor) {
+    case "primary":
+      return "var(--primary)";
+    case "secondary":
+      return "var(--secondary)";
+    case "success":
+      return "var(--success)";
+    case "danger":
+      return "var(--danger)";
+    case "warning":
+      return "var(--warning)";
+    case "info":
+      return "var(--info)";
+    case "light":
+      return "var(--light)";
+    case "dark":
+      return "var(--dark)";
+    case "white":
+      return "var(--white)";
+    default:
+      return {};
+  }
+};
+
 const getSize = ({ size }) => {
   size = `${size}`.toLowerCase();
   switch (size) {
@@ -49,11 +75,12 @@ export const ProgressLineWrapper = styled.div`
 export const ProgressLineInner = styled.div`
   height: 10px;
   width: ${getProgress};
-  background-color: var(--primary);
+  background-color: ${getBgColor};
   position: absolute;
   top: 0;
   left: 0;
   border-radius: 15px;
+  transition: width 0.3s ease;
 `;
 
 export const ProgressMain = styled.div`
