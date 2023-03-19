@@ -6,6 +6,7 @@ const Container = styled.div`
   width: 100%;
   border: var(--border);
   transition: box-shadow 0.3s ease;
+  border-radius: 4px;
   :hover {
     box-shadow: var(--shadow);
     cursor: pointer;
@@ -16,20 +17,32 @@ export const Header = styled.div`
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  padding: 10px;
+  padding: 15px;
 `;
 
 export const Body = styled.fieldset`
   border: var(--border);
   border-left: 0;
   border-right: 0;
-  padding: 10px;
+  padding: 15px;
 `;
 
 export const Footer = styled.fieldset`
   border: 0;
-  border-top: var(--border);
-  padding: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const FooterLink = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+  width: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
 `;
 
 export { Container };
