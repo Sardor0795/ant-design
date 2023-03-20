@@ -121,6 +121,31 @@ export const Inputs = () => {
             <InputNumber type="number" inputType="default" placeholder="Default Medium" size="medium"/>
             <InputNumber type="number" inputType="default" placeholder="Default Large" size="large"/>
           </Card>
+          <Card type="Danger" desc={"type='normal' button size='large, medium, small' placeholder='normal medium'"}>
+            <InputNumber type="number" inputType="danger" placeholder="Danger Small" size="small"/>
+            <InputNumber type="number" inputType="danger" placeholder="Danger Medium" size="medium"/>
+            <InputNumber type="number" inputType="danger" placeholder="Danger Large" size="large"/>
+          </Card>
+          <Card type="Success" desc={"type='normal' button size='large, medium, small' placeholder='normal medium'"}>
+            <InputNumber type="number" inputType="success" placeholder="Success Small" size="small"/>
+            <InputNumber type="number" inputType="success" placeholder="Success Medium" size="medium"/>
+            <InputNumber type="number" inputType="success" placeholder="Success Large" size="large"/>
+          </Card>
+          <Card type="Disabled All Types" desc={"type='normal' button size='large, medium, small' placeholder='normal medium'"}>
+            <InputNumber disabled="disabled" type="number" inputType="default" placeholder="Number Default Disabled" size="large"/>
+            <InputNumber disabled="disabled" type="number" inputType="danger" placeholder="Number Danger Disabled" size="large"/>
+            <InputNumber disabled="disabled" type="number" inputType="success" placeholder="Number Success Disabled" size="large"/>
+          </Card>
+          <Card type="BgColor" desc={"type='normal' button size='large, medium, small' placeholder='normal medium'"}>
+            <InputNumber bgColor="default" type="number" inputType="default" placeholder="Number Default" size="large"/>
+            <InputNumber bgColor="danger" type="number" inputType="danger" placeholder="Number Danger" size="large"/>
+            <InputNumber bgColor="success" type="number" inputType="success" placeholder="Number Success" size="large"/>
+          </Card>
+          <Card type="Float Number" desc={"type='normal' button size='large, medium, small' placeholder='normal medium'"}>
+            <InputNumber floatNum type="number" inputType="default" placeholder="Number Default" size="large"/>
+            <InputNumber floatNum type="number" inputType="danger" placeholder="Number Danger" size="large"/>
+            <InputNumber floatNum type="number" inputType="success" placeholder="Number Success" size="large"/>
+          </Card>
         </LayoutContainer>
       </LayoutWrapper>
     </>

@@ -113,7 +113,7 @@ export const InputNumberWrapper = styled.input`
   background-color: #fff;
   ${getColor}
   ${getSize}
-  /* ${getBgColor} */
+  ${getBgColor}
   width: 100%;
   border-radius: 4px;
   text-align: left;
