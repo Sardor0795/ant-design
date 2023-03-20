@@ -56,6 +56,24 @@ export const Tooltip = () => {
               <ToolTip toolPos="bottom" border size="large">Bottom Tooltip</ToolTip>
             </TopTooltipWrapper>
           </Card>
+          <Card type="BgColor" desc={"Basic hover tooltip with text"}>
+          <ToolTip toolBgColor="green" border size="medium">Green</ToolTip>
+          <ToolTip toolBgColor="blue" border size="medium">Blue</ToolTip>
+          <ToolTip toolBgColor="red" border size="medium">Red</ToolTip>
+          <ToolTip toolBgColor="black" border size="medium">Black</ToolTip>
+          <ToolTip toolBgColor="yellow" border size="medium">Yellow</ToolTip>
+          <ToolTip toolBgColor="pink" border size="medium">Pink</ToolTip>
+          <ToolTip toolBgColor="orange" border size="medium">Orange</ToolTip>
+          <ToolTip toolBgColor="limegreen" border size="medium">Limegreen</ToolTip>
+          <ToolTip toolBgColor="brown" border size="medium">Brown</ToolTip>
+          <ToolTip toolBgColor="aqua" border size="medium">Aqua</ToolTip>
+          <ToolTip toolBgColor="orchid" border size="medium">Orchid</ToolTip>
+          <ToolTip toolBgColor="gold" border size="medium">Gold</ToolTip>
+          <ToolTip toolBgColor="magenta" border size="medium">Magenta</ToolTip>
+          <ToolTip toolBgColor="dimgray" border size="medium">Dimgray</ToolTip>
+          <ToolTip toolBgColor="crimson" border size="medium">Crimson</ToolTip>
+          <ToolTip toolBgColor="chocolate" border size="medium">Chocolate</ToolTip>
+          </Card>
         </LayoutContainer>
       </LayoutWrapper>
     </>

@@ -28,24 +28,24 @@ const getToolPosition = ({ toolPos }) => {
     case "left":
       return {
         top: "50%",
-        left: "-180%",
+        left: "-190%",
         transform: "translateY(-50%)",
       };
     case "right":
       return {
         top: "50%",
-        right: "-165%",
+        right: "-175%",
         transform: "translateY(-50%)",
       };
     case "bottom":
       return {
-        bottom: "-100%",
+        bottom: "-110%",
         left: "50%",
         transform: "translateX(-50%)",
       };
     default:
       return {
-        top: "-100%",
+        top: "-110%",
         left: "50%",
         transform: "translateX(-50%)",
       };
@@ -106,7 +106,8 @@ export const ToolTipContent = styled.div`
   display: none;
   white-space: nowrap;
   padding: 5px 5px;
-  background-color: #000;
+  background-color: ${({ toolBgColor }) =>
+    toolBgColor ? toolBgColor : "#000"};
   border-radius: 4px;
   color: #fff;
   position: absolute;
@@ -116,7 +117,8 @@ export const ToolTipContent = styled.div`
     content: "";
     width: 20px;
     height: 20px;
-    background-color: #000;
+    background-color: ${({ toolBgColor }) =>
+      toolBgColor ? toolBgColor : "#000"};
     position: absolute;
     z-index: -1;
     ${getToolIndicator}
