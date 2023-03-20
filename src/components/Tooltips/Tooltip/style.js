@@ -1,33 +1,43 @@
 import styled from "styled-components";
 
-// const getSize = ({ size }) => {
-//   switch (size) {
-//     case "small":
-//       return {
-//         padding: "8px",
-//         fontSize: "12px",
-//       };
-//     case "medium":
-//       return {
-//         padding: "10px",
-//         fontSize: "14px",
-//       };
-//     case "large":
-//       return {
-//         padding: "12px",
-//         fontSize: "16px",
-//       };
+const getSize = ({ size }) => {
+  switch (size) {
+    case "small":
+      return {
+        padding: "8px",
+        fontSize: "12px",
+      };
+    case "medium":
+      return {
+        padding: "10px",
+        fontSize: "14px",
+      };
+    case "large":
+      return {
+        padding: "12px",
+        fontSize: "16px",
+      };
 
-//     default: {
-//     }
-//   }
-// };
+    default: {
+    }
+  }
+};
 
 export const ToolTipButton = styled.button`
   background: none;
   border: none;
   cursor: pointer;
   position: relative;
+  border-radius: 4px;
+  border: ${({ border }) => (border ? "var(--border)" : null)};
+  width: ${({ block }) => (block ? "250px" : null)};
+  margin: ${({ block }) => (block ? "10px" : null)};
+  ${getSize}
+  transition: color 0.3s ease, backgroundColor 0.3s ease;
+  :hover {
+    border-color: var(--info);
+    color: var(--info);
+  }
   :hover div {
     display: block;
   }
@@ -41,7 +51,7 @@ export const ToolTipContent = styled.div`
   border-radius: 4px;
   color: #fff;
   position: absolute;
-  top: -170%;
+  top: -100%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 5;

@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../Card";
 import { LayoutContainer, LayoutWrapper } from "../Layout/style";
-import { TooltipList, TooltipText, TooltipTitle } from "./style";
+import { TooltipList, TooltipText, TooltipTitle, TooltSizesWrapper } from "./style";
 import { ToolTip } from "./Tooltip";
 
 export const Tooltip = () => {
@@ -19,7 +19,14 @@ export const Tooltip = () => {
       <LayoutWrapper>
         <LayoutContainer>
           <Card type="Basic Text" desc={"Basic hover tooltip with text"}>
-              <ToolTip/>
+              <ToolTip size="medium"/>
+          </Card>
+          <Card type="Buttons with Sizes" desc={"Buttons with different Large, Medium, Small sizes"}>
+            <TooltSizesWrapper>
+              <ToolTip border block size="small"/>
+              <ToolTip border block size="medium"/>
+              <ToolTip border block size="large"/>
+            </TooltSizesWrapper>
           </Card>
         </LayoutContainer>
         <LayoutContainer>
