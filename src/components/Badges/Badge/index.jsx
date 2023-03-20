@@ -1,10 +1,13 @@
 import React from "react";
 import { BadgeIndicator, BadgeWrapper } from "./style";
 
-export const BadgeComp = ({ count, ...res }) => {
+export const BadgeComp = ({ icon, count, ...res }) => {
   return (
     <BadgeWrapper {...res}>
-      <BadgeIndicator {...res}>{count}</BadgeIndicator>
+      <BadgeIndicator icon={icon} {...res}>
+        {count}
+        {icon ? <img src={icon} alt="img" /> : null}
+      </BadgeIndicator>
     </BadgeWrapper>
   );
 };
