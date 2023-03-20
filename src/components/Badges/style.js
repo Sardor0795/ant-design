@@ -27,3 +27,16 @@ export const StdAlone = styled.div`
   position: relative;
 `;
 
+export const BadgeESumButton = styled.button`
+  background: var(--primary);
+  margin-top: 5px;
+  margin-right: 5px;
+  border: 0;
+  width: 25px;
+  height: 25px;
+  color: #fff;
+  cursor: pointer;
+  :active {
+    transform: translateY(2px);
+  }
+`;

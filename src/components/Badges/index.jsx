@@ -2,7 +2,13 @@ import React from "react";
 import Card from "../Card";
 import { LayoutContainer, LayoutWrapper } from "../Layout/style";
 import { BadgeComp } from "./Badge";
-import { BadgeList, BadgeText, BadgeTitle, StdAlone } from "./style";
+import {
+  BadgeESumButton,
+  BadgeList,
+  BadgeText,
+  BadgeTitle,
+  StdAlone,
+} from "./style";
 
 import ClockIcon from "../../assets/icons/badge_clock.svg";
 import FaceBookIcon from "../../assets/icons/badge_fackbook.svg";
@@ -119,12 +125,12 @@ export class Badge extends React.Component {
               >
                 <div>
                   <BadgeComp bgColor="blue" count={this.state.countMin} badge />
-                  <button onClick={setCount} name="min">
+                  <BadgeESumButton onClick={setCount} name="min">
                     -
-                  </button>
-                  <button onClick={setCount} name="min">
+                  </BadgeESumButton>
+                  <BadgeESumButton onClick={setCount} name="min">
                     +
-                  </button>
+                  </BadgeESumButton>
                 </div>
                 <div>
                   <BadgeComp
@@ -132,12 +138,12 @@ export class Badge extends React.Component {
                     count={this.state.countMax}
                     badge
                   />
-                  <button onClick={setCount} name="max">
+                  <BadgeESumButton onClick={setCount} name="max">
                     -
-                  </button>
-                  <button onClick={setCount} name="max">
+                  </BadgeESumButton>
+                  <BadgeESumButton onClick={setCount} name="max">
                     +
-                  </button>
+                  </BadgeESumButton>
                 </div>
               </div>
             </Card>
