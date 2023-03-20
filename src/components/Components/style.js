@@ -35,7 +35,7 @@ export const PathLink = styled(Link)`
   text-decoration: none;
   transition: opacity 0.2s ease, background-color 0.2s ease;
   background-color: #227bfeff;
-  box-shadow: 0px 0px 5px 0px #F7505EFF;
+  box-shadow: 0px 0px 5px 0px #f7505eff;
   :hover {
     background-color: #f7505eff;
   }
