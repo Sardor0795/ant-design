@@ -1,6 +1,8 @@
 import React from "react";
 import Card from "../Card";
 import { LayoutContainer, LayoutWrapper } from "../Layout/style";
+import { InputNumber } from "./input_number_default";
+import { InputdUserDefault } from "./input_user_default";
 import { NormalBgColor } from "./normal_bgcolor";
 import { NormalDanger } from "./normal_danger";
 import { NormalDefault } from "./normal_default";
@@ -80,9 +82,45 @@ export const Inputs = () => {
             <PasswordBg inputType="danger" placeholder="Password Danger Disabled" type="password" size="large"/>
             <PasswordBg inputType="success" placeholder="Password Success Disabled" type="password" size="large"/>
           </Card>
+          <Card type="Default" desc={"type='normal' button size='large, medium, small' placeholder='normal medium'"}>
+            <InputdUserDefault left inputType="default" placeholder="Left default small" size="small"/>
+            <InputdUserDefault inputType="default" placeholder="Right default small" size="small"/>
+            <InputdUserDefault left inputType="default" placeholder="Left default medium" size="medium"/>
+            <InputdUserDefault inputType="default" placeholder="Right default medium" size="medium"/>
+            <InputdUserDefault left inputType="default" placeholder="Left default large" size="large"/>
+            <InputdUserDefault inputType="default" placeholder="Right default large" size="large"/>
+          </Card>
         </LayoutContainer>
         <LayoutContainer>
-          <Card></Card>
+          <Card type="Danger" desc={"type='normal' button size='large, medium, small' placeholder='normal medium'"}>
+            <InputdUserDefault btnBg="danger" left inputType="danger" placeholder="Left Danger Small" size="small"/>
+            <InputdUserDefault btnBg="danger" inputType="danger" placeholder="Right Danger Small" size="small"/>
+            <InputdUserDefault btnBg="danger" left inputType="danger" placeholder="Left Danger Medium" size="medium"/>
+            <InputdUserDefault btnBg="danger" inputType="danger" placeholder="Right Danger Medium" size="medium"/>
+            <InputdUserDefault btnBg="danger" left inputType="danger" placeholder="Left Danger Large" size="large"/>
+            <InputdUserDefault btnBg="danger" inputType="danger" placeholder="Right Danger Large" size="large"/>
+          </Card>
+          <Card type="Success" desc={"type='normal' button size='large, medium, small' placeholder='normal medium'"}>
+            <InputdUserDefault btnBg="success" left inputType="success" placeholder="Left Danger Small" size="small"/>
+            <InputdUserDefault btnBg="success" inputType="success" placeholder="Right Danger Small" size="small"/>
+            <InputdUserDefault btnBg="success" left inputType="success" placeholder="Left Danger Medium" size="medium"/>
+            <InputdUserDefault btnBg="success" inputType="success" placeholder="Right Danger Medium" size="medium"/>
+            <InputdUserDefault btnBg="success" left inputType="success" placeholder="Left Danger Large" size="large"/>
+            <InputdUserDefault btnBg="success" inputType="success" placeholder="Right Danger Large" size="large"/>
+          </Card>
+          <Card type="BgColor" desc={"type='normal' button size='large, medium, small' placeholder='normal medium'"}>
+            <InputdUserDefault btnBg="default" left inputType="default" placeholder="Left Danger Small" size="large"/>
+            <InputdUserDefault btnBg="default" inputType="default" placeholder="Right Danger Small" size="large"/>
+            <InputdUserDefault btnBg="danger" left inputType="danger" placeholder="Left Danger Medium" size="large"/>
+            <InputdUserDefault btnBg="danger" inputType="danger" placeholder="Right Danger Medium" size="large"/>
+            <InputdUserDefault btnBg="success" left inputType="success" placeholder="Left Danger Large" size="large"/>
+            <InputdUserDefault btnBg="success" inputType="success" placeholder="Right Danger Large" size="large"/>
+          </Card>
+          <Card type="Default" desc={"type='normal' button size='large, medium, small' placeholder='normal medium'"}>
+            <InputNumber type="number" inputType="default" placeholder="Default Small" size="small"/>
+            <InputNumber type="number" inputType="default" placeholder="Default Medium" size="medium"/>
+            <InputNumber type="number" inputType="default" placeholder="Default Large" size="large"/>
+          </Card>
         </LayoutContainer>
       </LayoutWrapper>
     </>
