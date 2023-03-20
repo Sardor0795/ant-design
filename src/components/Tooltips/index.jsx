@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../Card";
 import { LayoutContainer, LayoutWrapper } from "../Layout/style";
-import { TooltipList, TooltipText, TooltipTitle, TooltSizesWrapper } from "./style";
+import { MiddleTooltipWrapper, TooltipList, TooltipText, TooltipTitle, TooltSizesWrapper, TopTooltipWrapper } from "./style";
 import { ToolTip } from "./Tooltip";
 
 export const Tooltip = () => {
@@ -36,7 +36,26 @@ export const Tooltip = () => {
           </Card>
         </LayoutContainer>
         <LayoutContainer>
-          <Card></Card>
+          <Card type="Placement" desc={"Basic hover tooltip with text"}>
+            <TopTooltipWrapper>
+              <ToolTip border size="large">Top Tooltip</ToolTip>
+              <ToolTip border size="large">Top Tooltip</ToolTip>
+              <ToolTip border size="large">Top Tooltip</ToolTip>
+            </TopTooltipWrapper>
+            <MiddleTooltipWrapper>
+              <ToolTip toolPos="left" border size="large">Left Tooltip</ToolTip>
+              <ToolTip border size="large">Right Tooltip</ToolTip>
+            </MiddleTooltipWrapper>
+            <MiddleTooltipWrapper>
+              <ToolTip toolPos="left" border size="large">Left Tooltip</ToolTip>
+              <ToolTip border size="large">Right Tooltip</ToolTip>
+            </MiddleTooltipWrapper>
+            <TopTooltipWrapper>
+              <ToolTip border size="large">Bottom Tooltip</ToolTip>
+              <ToolTip border size="large">Bottom Tooltip</ToolTip>
+              <ToolTip border size="large">Bottom Tooltip</ToolTip>
+            </TopTooltipWrapper>
+          </Card>
         </LayoutContainer>
       </LayoutWrapper>
     </>

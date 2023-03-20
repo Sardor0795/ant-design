@@ -25,3 +25,25 @@ export const TooltSizesWrapper = styled.div`
   flex-wrap: wrap;
   align-items: center;
 `;
+
+export const TopTooltipWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-right: auto;
+  margin-left: auto;
+  & button {
+    margin: 5px;
+  }
+`;
+
+export const MiddleTooltipWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  & button:last-child {
+    position: absolute;
+    right: 0;
+  }
+`;

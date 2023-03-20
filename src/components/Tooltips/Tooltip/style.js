@@ -23,9 +23,32 @@ const getSize = ({ size }) => {
   }
 };
 
+const getToolPosition = ({ toolPos }) => {
+  switch (toolPos) {
+    default:
+      return {
+        top: "-100%",
+        left: "50%",
+        transform: "translateX(-50%)",
+      };
+  }
+};
+
+const getToolIndicator = ({ toolPos }) => {
+  switch (toolPos) {
+    default:
+      return {
+        left: "50%",
+        bottom: "-5px",
+        transform: "translateX(-50%) rotate(45deg)",
+      };
+  }
+};
+
 export const ToolTipButton = styled.button`
   background: none;
   border: none;
+  white-space: nowrap;
   cursor: pointer;
   position: relative;
   border-radius: 4px;
@@ -51,19 +74,15 @@ export const ToolTipContent = styled.div`
   border-radius: 4px;
   color: #fff;
   position: absolute;
-  top: -100%;
-  left: 50%;
-  transform: translateX(-50%);
   z-index: 5;
+  ${getToolPosition}
   ::before {
     content: "";
     width: 20px;
     height: 20px;
     background-color: #000;
     position: absolute;
-    left: 50%;
-    bottom: -5px;
-    transform: translateX(-50%) rotate(45deg);
     z-index: -1;
+    ${getToolIndicator}
   }
 `;
