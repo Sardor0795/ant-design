@@ -43,17 +43,17 @@ export const Tooltip = () => {
               <ToolTip border size="large">Top Tooltip</ToolTip>
             </TopTooltipWrapper>
             <MiddleTooltipWrapper>
+              <ToolTip toolPos="right" border size="large">Right Tooltip</ToolTip>
               <ToolTip toolPos="left" border size="large">Left Tooltip</ToolTip>
-              <ToolTip border size="large">Right Tooltip</ToolTip>
             </MiddleTooltipWrapper>
             <MiddleTooltipWrapper>
+              <ToolTip toolPos="right" border size="large">Right Tooltip</ToolTip>
               <ToolTip toolPos="left" border size="large">Left Tooltip</ToolTip>
-              <ToolTip border size="large">Right Tooltip</ToolTip>
             </MiddleTooltipWrapper>
             <TopTooltipWrapper>
-              <ToolTip border size="large">Bottom Tooltip</ToolTip>
-              <ToolTip border size="large">Bottom Tooltip</ToolTip>
-              <ToolTip border size="large">Bottom Tooltip</ToolTip>
+              <ToolTip toolPos="bottom" border size="large">Bottom Tooltip</ToolTip>
+              <ToolTip toolPos="bottom" border size="large">Bottom Tooltip</ToolTip>
+              <ToolTip toolPos="bottom" border size="large">Bottom Tooltip</ToolTip>
             </TopTooltipWrapper>
           </Card>
         </LayoutContainer>

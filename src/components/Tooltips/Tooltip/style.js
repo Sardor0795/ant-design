@@ -25,6 +25,24 @@ const getSize = ({ size }) => {
 
 const getToolPosition = ({ toolPos }) => {
   switch (toolPos) {
+    case "left":
+      return {
+        top: "50%",
+        left: "-180%",
+        transform: "translateY(-50%)",
+      };
+    case "right":
+      return {
+        top: "50%",
+        right: "-165%",
+        transform: "translateY(-50%)",
+      };
+    case "bottom":
+      return {
+        bottom: "-100%",
+        left: "50%",
+        transform: "translateX(-50%)",
+      };
     default:
       return {
         top: "-100%",
@@ -36,6 +54,24 @@ const getToolPosition = ({ toolPos }) => {
 
 const getToolIndicator = ({ toolPos }) => {
   switch (toolPos) {
+    case "left":
+      return {
+        top: "50%",
+        right: "-5px",
+        transform: "translateY(-50%) rotate(45deg)",
+      };
+    case "right":
+      return {
+        top: "50%",
+        left: "-5px",
+        transform: "translateY(-50%) rotate(45deg)",
+      };
+    case "bottom":
+      return {
+        top: "-5px",
+        left: "50%",
+        transform: "translateX(-50%) rotate(45deg)",
+      };
     default:
       return {
         left: "50%",
