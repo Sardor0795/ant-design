@@ -26,3 +26,4 @@ export const StdAlone = styled.div`
   display: flex;
   position: relative;
 `;
+
