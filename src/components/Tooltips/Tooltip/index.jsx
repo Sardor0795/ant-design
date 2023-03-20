@@ -1,12 +1,11 @@
-import React from 'react'
-import { ToolTipButton } from './style'
+import React from "react";
+import { ToolTipButton, ToolTipContent } from "./style";
 
 export const ToolTip = () => {
   return (
     <ToolTipButton>
-
-        Basic hover tooltip with text
-
+      Hover me
+      <ToolTipContent>Content tooltip bottom</ToolTipContent>
     </ToolTipButton>
-  )
-}
+  );
+};
