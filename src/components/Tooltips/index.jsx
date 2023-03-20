@@ -19,13 +19,19 @@ export const Tooltip = () => {
       <LayoutWrapper>
         <LayoutContainer>
           <Card type="Basic Text" desc={"Basic hover tooltip with text"}>
-              <ToolTip size="medium"/>
+              <ToolTip size="medium">Hover me</ToolTip>
           </Card>
           <Card type="Buttons with Sizes" desc={"Buttons with different Large, Medium, Small sizes"}>
             <TooltSizesWrapper>
-              <ToolTip border block size="small"/>
-              <ToolTip border block size="medium"/>
-              <ToolTip border block size="large"/>
+              <ToolTip border block size="small">
+              Small Tooltip with button
+              </ToolTip>
+              <ToolTip border block size="medium">
+              Med Tooltip with button
+              </ToolTip>
+              <ToolTip border block size="large">
+              Large Tooltip with button
+              </ToolTip>
             </TooltSizesWrapper>
           </Card>
         </LayoutContainer>
