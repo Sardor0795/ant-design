@@ -6,7 +6,10 @@ import { NormalDanger } from "./normal_danger";
 import { NormalDefault } from "./normal_default";
 import { NormalDisabled } from "./normal_disabled";
 import { NormalSuccess } from "./normal_success";
+import { PasswordDanger } from "./password_danger";
 import { PasswordDefault } from "./password_default";
+import { PasswordDisabledAll } from "./password_disabled_all";
+import { PasswordSuccess } from "./password_success";
 import { InputsList, InputsText, InputsTitle } from "./style";
 
 export const Inputs = () => {
@@ -55,6 +58,21 @@ export const Inputs = () => {
             <PasswordDefault inputType="default" placeholder="Password Default Small" type="password" size="small"/>
             <PasswordDefault inputType="default" placeholder="Password Default Medium" type="password" size="medium"/>
             <PasswordDefault inputType="default" placeholder="Password Default Large" type="password" size="large"/>
+          </Card>
+          <Card type="Password Danger" desc={"type='normal' button size='large, medium, small' placeholder='normal medium'"}>
+            <PasswordDanger inputType="danger" placeholder="Password Default Small" type="password" size="small"/>
+            <PasswordDanger inputType="danger" placeholder="Password Default Medium" type="password" size="medium"/>
+            <PasswordDanger inputType="danger" placeholder="Password Default Large" type="password" size="large"/>
+          </Card>
+          <Card type="Password Success" desc={"type='normal' button size='large, medium, small' placeholder='normal medium'"}>
+            <PasswordSuccess inputType="success" placeholder="Password Default Small" type="password" size="small"/>
+            <PasswordSuccess inputType="success" placeholder="Password Default Medium" type="password" size="medium"/>
+            <PasswordSuccess inputType="success" placeholder="Password Default Large" type="password" size="large"/>
+          </Card>
+          <Card type="Password Disabled All Types" desc={"type='normal' button size='large, medium, small' placeholder='normal medium'"}>
+            <PasswordDisabledAll disabled="disabled" inputType="default" placeholder="Password Default Disabled" type="password" size="large"/>
+            <PasswordDisabledAll disabled="disabled" inputType="danger" placeholder="Password Danger Disabled" type="password" size="large"/>
+            <PasswordDisabledAll disabled="disabled" inputType="success" placeholder="Password Success Disabled" type="password" size="large"/>
           </Card>
         </LayoutContainer>
         <LayoutContainer>
