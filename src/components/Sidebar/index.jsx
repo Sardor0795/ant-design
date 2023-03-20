@@ -1,9 +1,10 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import { sidebar } from "../../utils/sidebar";
 import { Body, Container, Link, Wrapper } from "./style";
 
 export const Navbar = () => {
+  const location = useLocation();
   return (
     <Wrapper>
       <Container>
@@ -18,7 +19,9 @@ export const Navbar = () => {
           </Link>
         ))}
       </Container>
-      <Body>
+      <Body
+        style={location.pathname === "/components" ? { display: "none" } : null}
+      >
         <Outlet />
       </Body>
     </Wrapper>
