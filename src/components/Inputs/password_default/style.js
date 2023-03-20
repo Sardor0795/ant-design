@@ -107,6 +107,21 @@ export const PasswordInputWrapper = styled.div`
 
 export const PasswordInputBtn = styled.button`
   position: absolute;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   right: 0;
+  width: 30px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  & img {
+    width: 100%;
+  }
+  :active {
+    opacity: 0.8;
+  }
 `;
