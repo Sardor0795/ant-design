@@ -1,5 +1,31 @@
 import styled from "styled-components";
 
+const getSize = ({ size }) => {
+  switch (size) {
+    case "small":
+      return {
+        minWidth: "10px",
+        height: "10px",
+        borderRadius: "50%",
+      };
+    case "medium":
+      return {
+        minWidth: "15px",
+        height: "15px",
+        borderRadius: "50%",
+      };
+    case "large":
+      return {
+        minWidth: "20px",
+        height: "20px",
+        borderRadius: "50%",
+      };
+
+    default: {
+    }
+  }
+};
+
 export const BadgeWrapper = styled.div`
   width: ${({ stdAlone }) => (stdAlone ? "0" : "40px")};
   height: ${({ stdAlone }) => (stdAlone ? "0" : "40px")};
@@ -28,4 +54,5 @@ export const BadgeIndicator = styled.div`
     width: 100%;
     height: 100%;
   }
+  ${getSize}
 `;

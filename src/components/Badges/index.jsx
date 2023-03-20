@@ -149,7 +149,33 @@ export class Badge extends React.Component {
             </Card>
           </LayoutContainer>
           <LayoutContainer>
-            <Card></Card>
+            <Card type="StandAlone Dot Sizes" desc={"standalone prop is when you want to render only the badge without any other element."}>
+            <StdAlone>
+                <BadgeComp size="large" bgColor="chocolate" stdAlone badge />
+                <BadgeComp size="medium" bgColor="chocolate" stdAlone badge />
+                <BadgeComp size="small" bgColor="chocolate" stdAlone badge />
+            </StdAlone>
+            <StdAlone>
+                <BadgeComp size="large" bgColor="limegreen" stdAlone badge />
+                <BadgeComp size="medium" bgColor="limegreen" stdAlone badge />
+                <BadgeComp size="small" bgColor="limegreen" stdAlone badge />
+            </StdAlone>
+            <StdAlone>
+                <BadgeComp size="large" bgColor="red" stdAlone badge />
+                <BadgeComp size="medium" bgColor="red" stdAlone badge />
+                <BadgeComp size="small" bgColor="red" stdAlone badge />
+            </StdAlone>
+            <StdAlone>
+                <BadgeComp size="large" bgColor="green" stdAlone badge />
+                <BadgeComp size="medium" bgColor="green" stdAlone badge />
+                <BadgeComp size="small" bgColor="green" stdAlone badge />
+            </StdAlone>
+            <StdAlone>
+                <BadgeComp size="large" bgColor="orange" stdAlone badge />
+                <BadgeComp size="medium" bgColor="orange" stdAlone badge />
+                <BadgeComp size="small" bgColor="orange" stdAlone badge />
+            </StdAlone>
+            </Card>
           </LayoutContainer>
         </LayoutWrapper>
       </>

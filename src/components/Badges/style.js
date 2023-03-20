@@ -22,7 +22,7 @@ export const BadgeList = styled.ul`
 
 export const StdAlone = styled.div`
   width: 100%;
-  padding: 20px;
+  padding: 10px 20px;
   display: flex;
   position: relative;
 `;
