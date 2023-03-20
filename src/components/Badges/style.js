@@ -19,3 +19,10 @@ export const BadgeList = styled.ul`
   list-style-type: circle;
   margin-bottom: 50px;
 `;
+
+export const StdAlone = styled.div`
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  position: relative;
+`;

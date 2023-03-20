@@ -2,7 +2,7 @@ import React from "react";
 import Card from "../Card";
 import { LayoutContainer, LayoutWrapper } from "../Layout/style";
 import { BadgeComp } from "./Badge";
-import { BadgeList, BadgeText, BadgeTitle } from "./style";
+import { BadgeList, BadgeText, BadgeTitle, StdAlone } from "./style";
 
 import ClockIcon from '../../assets/icons/badge_clock.svg'
 import FaceBookIcon from '../../assets/icons/badge_fackbook.svg'
@@ -44,6 +44,13 @@ export class Badge extends React.Component {
                 <BadgeComp icon={FaceBookIcon} badge/>
                 <BadgeComp icon={GitHubIcon} badge/>
                 <BadgeComp icon={ChromeIcon} badge/>
+            </Card>
+            <Card type="Stand Alone" desc={"Simplest Usage. Badge will be hidden when count is 0, but we can use showZero to show it."}>
+              <StdAlone>
+                <BadgeComp bgColor="blue" stdAlone count="0" badge/>
+                <BadgeComp bgColor="orange" stdAlone count="88" badge/>
+                <BadgeComp stdAlone count="99+" badge/>
+              </StdAlone>
             </Card>
           </LayoutContainer>
           <LayoutContainer>

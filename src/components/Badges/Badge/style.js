@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const BadgeWrapper = styled.div`
-  width: 40px;
-  height: 40px;
+  width: ${({ stdAlone }) => (stdAlone ? "0" : "40px")};
+  height: ${({ stdAlone }) => (stdAlone ? "0" : "40px")};
   background-color: #eeeeeeff;
   position: relative;
   margin-right: auto;
@@ -12,7 +12,8 @@ export const BadgeIndicator = styled.div`
   min-width: 20px;
   height: 20px;
   border-radius: 10px;
-  background-color: ${({ icon }) => (icon ? null : "#ff4d4fff")};
+  background-color: ${({ icon, bgColor }) =>
+    icon ? null : bgColor ? bgColor : "#ff4d4fff"};
   position: absolute;
   display: flex;
   align-items: center;
