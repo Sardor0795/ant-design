@@ -5,7 +5,7 @@ import { Container, Span, Title } from "./style";
 export const Generic = () => {
   const location = useLocation();
   return (
-    <Container>
+    <Container location={location.pathname}>
       <Title>
         Path: <Span>{location.pathname}</Span>
       </Title>

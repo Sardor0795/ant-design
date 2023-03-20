@@ -8,7 +8,8 @@ const Container = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 100%;
+  height: ${({ location }) =>
+    location === "/docs" || location === "/resources" ? "500px" : "100%"};
   border-radius: 4px;
 `;
 

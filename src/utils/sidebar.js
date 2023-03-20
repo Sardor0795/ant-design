@@ -5,7 +5,7 @@ import HourImg from "../assets/icons/hour.jpg";
 import CheckImg from "../assets/icons/check.png";
 import { Progress } from "../components/Progress";
 import { Inputs } from "../components/Inputs";
-import { Alert } from "../components/Alert";
+import { Alert } from "../components/Alerts";
 import { Badge } from "../components/Badge";
 import { Checkbox } from "../components/Checkbox";
 import { Dropdown } from "../components/Dropdown";
@@ -129,7 +129,7 @@ export const sidebar = [
     element: <Switch />,
     imgHour: HourImg,
     imgCheck: CheckImg,
-    fulfilled: false,
+    fulfilled: true,
   },
   {
     id: 14,
