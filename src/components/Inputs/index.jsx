@@ -6,6 +6,7 @@ import { NormalDanger } from "./normal_danger";
 import { NormalDefault } from "./normal_default";
 import { NormalDisabled } from "./normal_disabled";
 import { NormalSuccess } from "./normal_success";
+import { PasswordBg } from "./password_bg";
 import { PasswordDanger } from "./password_danger";
 import { PasswordDefault } from "./password_default";
 import { PasswordDisabledAll } from "./password_disabled_all";
@@ -73,6 +74,11 @@ export const Inputs = () => {
             <PasswordDisabledAll disabled="disabled" inputType="default" placeholder="Password Default Disabled" type="password" size="large"/>
             <PasswordDisabledAll disabled="disabled" inputType="danger" placeholder="Password Danger Disabled" type="password" size="large"/>
             <PasswordDisabledAll disabled="disabled" inputType="success" placeholder="Password Success Disabled" type="password" size="large"/>
+          </Card>
+          <Card type="Password Bg Color" desc={"type='normal' button size='large, medium, small' placeholder='normal medium'"}>
+            <PasswordBg inputType="default" placeholder="Password Default Disabled" type="password" size="large"/>
+            <PasswordBg inputType="danger" placeholder="Password Danger Disabled" type="password" size="large"/>
+            <PasswordBg inputType="success" placeholder="Password Success Disabled" type="password" size="large"/>
           </Card>
         </LayoutContainer>
         <LayoutContainer>
