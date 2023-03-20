@@ -1,8 +1,10 @@
 import React from "react";
 import Card from "../Card";
 import { LayoutContainer, LayoutWrapper } from "../Layout/style";
+import { NormalBgColor } from "./normal_bgcolor";
 import { NormalDanger } from "./normal_danger";
 import { NormalDefault } from "./normal_default";
+import { NormalDisabled } from "./normal_disabled";
 import { NormalSuccess } from "./normal_success";
 import { InputsList, InputsText, InputsTitle } from "./style";
 
@@ -37,6 +39,16 @@ export const Inputs = () => {
             <NormalSuccess placeholder="Normal Success Small" type="success" size="small"/>
             <NormalSuccess placeholder="Normal Success Medium" type="success" size="medium"/>
             <NormalSuccess placeholder="Normal Success Large" type="success" size="large"/>
+          </Card>
+          <Card type="Normal Disabled All Types" desc={"type='normal' button size='large, medium, small' placeholder='normal medium'"}>
+            <NormalDisabled disabled="disabled" placeholder="Normal Default Disabled" type="default" size="large"/>
+            <NormalDisabled disabled="disabled" placeholder="Normal Danger Disabled" type="danger" size="large"/>
+            <NormalDisabled disabled="disabled" placeholder="Normal Success Disabled" type="success" size="large"/>
+          </Card>
+          <Card type="Normal bgColor" desc={"type='normal' button size='large, medium, small' placeholder='normal medium'"}>
+            <NormalBgColor bgColor="default" placeholder="Normal Default BgColor" type="default" size="large"/>
+            <NormalBgColor bgColor="danger" placeholder="Normal Danger BgColor" type="danger" size="large"/>
+            <NormalBgColor bgColor="success" placeholder="Normal Success BgColor" type="success" size="large"/>
           </Card>
         </LayoutContainer>
         <LayoutContainer>
