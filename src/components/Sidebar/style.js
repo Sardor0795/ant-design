@@ -21,9 +21,9 @@ const Container = styled.div`
     padding-left: 30px;
     border-right: 2px solid green;
     border-left: 2px solid green;
-    /* & img {
+    & img {
       display: none;
-    } */
+    }
   }
   &.scroll-close::-webkit-scrollbar {
     width: 0;
