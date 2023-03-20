@@ -10,7 +10,7 @@ import { Badge } from "../components/Badge";
 import { Checkbox } from "../components/Checkbox";
 import { Dropdown } from "../components/Dropdown";
 import { Table } from "../components/Table";
-import { Tooltip } from "../components/Tooltip";
+import { Tooltip } from "../components/Tooltips";
 import { Switch } from "../components/Switchs";
 
 export const sidebar = [
