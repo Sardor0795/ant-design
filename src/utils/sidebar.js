@@ -6,7 +6,7 @@ import CheckImg from "../assets/icons/check.png";
 import { Progress } from "../components/Progress";
 import { Inputs } from "../components/Inputs";
 import { Alert } from "../components/Alerts";
-import { Badge } from "../components/Badge";
+import { Badge } from "../components/Badges";
 import { Checkbox } from "../components/Checkbox";
 import { Dropdown } from "../components/Dropdown";
 import { Table } from "../components/Table";
