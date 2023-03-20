@@ -6,6 +6,7 @@ import { NormalDanger } from "./normal_danger";
 import { NormalDefault } from "./normal_default";
 import { NormalDisabled } from "./normal_disabled";
 import { NormalSuccess } from "./normal_success";
+import { PasswordDefault } from "./password_default";
 import { InputsList, InputsText, InputsTitle } from "./style";
 
 export const Inputs = () => {
@@ -49,6 +50,11 @@ export const Inputs = () => {
             <NormalBgColor bgColor="default" placeholder="Normal Default BgColor" type="default" size="large"/>
             <NormalBgColor bgColor="danger" placeholder="Normal Danger BgColor" type="danger" size="large"/>
             <NormalBgColor bgColor="success" placeholder="Normal Success BgColor" type="success" size="large"/>
+          </Card>
+          <Card type="Password Default" desc={"type='normal' button size='large, medium, small' placeholder='normal medium'"}>
+            <PasswordDefault inputType="default" placeholder="Password Default Small" type="password" size="small"/>
+            <PasswordDefault inputType="default" placeholder="Password Default Medium" type="password" size="medium"/>
+            <PasswordDefault inputType="default" placeholder="Password Default Large" type="password" size="large"/>
           </Card>
         </LayoutContainer>
         <LayoutContainer>
