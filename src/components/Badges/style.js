@@ -24,6 +24,7 @@ export const StdAlone = styled.div`
   width: 100%;
   padding: 10px 20px;
   display: flex;
+  align-items: center;
   position: relative;
 `;
 
