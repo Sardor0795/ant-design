@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SelectBtn = styled.button`
   position: relative;
-  width: 100%;
+  width: ${({ hover }) => (hover ? null : "100%")};
   height: 50px;
   padding-left: 15px;
   padding-right: 15px;
