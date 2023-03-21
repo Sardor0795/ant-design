@@ -5,41 +5,32 @@ import { DisabledBtn, SwitchList, SwitchText, SwitchTitle } from "./style";
 import { SwitchComp } from "./Switch";
 
 export const Switch = () => {
-  let indicator1 = 0;
-  let indicator2 = 0;
-  let indicator3 = 0;
   let disabled = 0;
   const toggleSwitchLarge = (e) => {
-    if (indicator1) {
+    if (e.target.children[0].style.transform === "translateX(24px)") {
       e.target.children[0].style.transform = "translateX(0)";
       e.target.style.backgroundColor = "purple";
-      indicator1 -= 1;
     } else {
       e.target.children[0].style.transform = "translateX(24px)";
       e.target.style.backgroundColor = "red";
-      indicator1 += 1;
     }
   };
   const toggleSwitchMedium = (e) => {
-    if (indicator2) {
+    if (e.target.children[0].style.transform === "translateX(16px)") {
       e.target.children[0].style.transform = "translateX(0)";
       e.target.style.backgroundColor = "purple";
-      indicator2 -= 1;
     } else {
       e.target.children[0].style.transform = "translateX(16px)";
       e.target.style.backgroundColor = "red";
-      indicator2 += 1;
     }
   };
   const toggleSwitchSmall = (e) => {
-    if (indicator3) {
+    if (e.target.children[0].style.transform === "translateX(10px)") {
       e.target.children[0].style.transform = "translateX(0)";
       e.target.style.backgroundColor = "purple";
-      indicator3 -= 1;
     } else {
       e.target.children[0].style.transform = "translateX(10px)";
       e.target.style.backgroundColor = "red";
-      indicator3 += 1;
     }
   };
   const disableBtn = (e) => {
@@ -100,6 +91,16 @@ export const Switch = () => {
             <div>
               <SwitchComp onClick={toggleSwitchLarge} size="large" />
               <DisabledBtn onClick={disableBtn}>Disabled</DisabledBtn>
+            </div>
+          </Card>
+          <Card
+            type="Basic"
+            desc={"basic switch accepts size, bgChecked, bgNotChecked props"}
+          >
+            <div>
+              <SwitchComp onClick={toggleSwitchLarge} size="large" />
+              <SwitchComp onClick={toggleSwitchMedium} size="medium" />
+              <SwitchComp onClick={toggleSwitchSmall} size="small" />
             </div>
           </Card>
         </LayoutContainer>
