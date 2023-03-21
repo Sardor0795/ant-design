@@ -2,6 +2,7 @@ import React from "react";
 import Card from "../Card";
 import { LayoutContainer, LayoutWrapper } from "../Layout/style";
 import { SwitchList, SwitchText, SwitchTitle } from "./style";
+import { SwitchComp } from "./Switch";
 
 export const Switch = () => {
   return (
@@ -30,7 +31,14 @@ export const Switch = () => {
 
       <LayoutWrapper>
         <LayoutContainer>
-          <Card></Card>
+          <Card type="Basic" desc={"basic switch accepts size, bgChecked, bgNotChecked props"}>
+            <div>
+
+            <SwitchComp size="large"/>
+            <SwitchComp size="medium"/>
+            <SwitchComp size="small"/>
+            </div>
+          </Card>
         </LayoutContainer>
         <LayoutContainer>
           <Card></Card>
