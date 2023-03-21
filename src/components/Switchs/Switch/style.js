@@ -60,5 +60,6 @@ export const SwitchInner = styled.div`
   background-color: #fff;
   border-radius: 50%;
   position: absolute;
-  left: 0;
+  pointer-events: none;
+  transition: 0.3s ease all;
 `;
