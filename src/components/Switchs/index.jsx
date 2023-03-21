@@ -1,13 +1,14 @@
 import React from "react";
 import Card from "../Card";
 import { LayoutContainer, LayoutWrapper } from "../Layout/style";
-import { SwitchList, SwitchText, SwitchTitle } from "./style";
+import { DisabledBtn, SwitchList, SwitchText, SwitchTitle } from "./style";
 import { SwitchComp } from "./Switch";
 
 export const Switch = () => {
   let indicator1 = 0;
   let indicator2 = 0;
   let indicator3 = 0;
+  let disabled = 0;
   const toggleSwitchLarge = (e) => {
     if (indicator1) {
       e.target.children[0].style.transform = "translateX(0)";
@@ -39,6 +40,21 @@ export const Switch = () => {
       e.target.children[0].style.transform = "translateX(10px)";
       e.target.style.backgroundColor = "red";
       indicator3 += 1;
+    }
+  };
+  const disableBtn = (e) => {
+    if (disabled) {
+      e.target.parentElement.children[0].style.cssText = `
+      opacity: 1;
+      pointer-events: unset;
+     `;
+      disabled -= 1;
+    } else {
+      e.target.parentElement.children[0].style.cssText = `
+      opacity: 0.5;
+      pointer-events: none;
+     `;
+      disabled += 1;
     }
   };
   return (
@@ -75,6 +91,15 @@ export const Switch = () => {
               <SwitchComp onClick={toggleSwitchLarge} size="large" />
               <SwitchComp onClick={toggleSwitchMedium} size="medium" />
               <SwitchComp onClick={toggleSwitchSmall} size="small" />
+            </div>
+          </Card>
+          <Card
+            type="Disabled"
+            desc={"disabled switch accepts size, bgChecked, bgNotChecked props"}
+          >
+            <div>
+              <SwitchComp onClick={toggleSwitchLarge} size="large" />
+              <DisabledBtn onClick={disableBtn}>Disabled</DisabledBtn>
             </div>
           </Card>
         </LayoutContainer>

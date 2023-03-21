@@ -19,3 +19,17 @@ export const SwitchList = styled.ul`
   list-style-type: circle;
   margin-bottom: 50px;
 `;
+
+export const DisabledBtn = styled.button`
+  padding: 5px 10px;
+  font-size: 20px;
+  color: #fff;
+  background-color: blue;
+  cursor: pointer;
+  border: 0;
+  
+  border-radius: 4px;
+  :active {
+    transform: translateY(2px);
+  }
+`;
