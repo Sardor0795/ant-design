@@ -18,20 +18,17 @@ export const SelectBtn = styled.button`
     border-color: ${({ disabled }) => (disabled ? null : "var(--info)")};
     color: ${({ disabled }) => (disabled ? null : "var(--info)")};
   }
-  &:hover > div {
-    display: ${({ disabled, hover, option }) =>
-      (disabled && !hover) || option ? null : "block"};
-  }
-  &:focus > div {
-    display: ${({ option }) => (option ? "block" : null)};
+  &:focus > span {
+    transform: rotate(180deg);
   }
 `;
 
 export const SelectImgWrapper = styled.span`
   position: absolute;
   right: 15px;
-  display: inline-block;
+  display: ${({ hover }) => (hover ? "none" : "inline-block")};
   width: 20px;
+  transition: transform 0.3s ease;
 `;
 
 export const SelectDropDownWrapper = styled.div`
@@ -41,6 +38,7 @@ export const SelectDropDownWrapper = styled.div`
   left: 0;
   top: 100%;
   display: none;
+  font-size: 14px;
   background-color: #fff;
   z-index: 50;
   box-shadow: var(--shadow);
@@ -77,3 +75,10 @@ export const SelectItemSub = styled.div`
     color: ${({ danger }) => (danger ? "#fff" : null)};
   }
 `;
+
+
+export const BtnWrapContainer = styled.div`
+    width: 100%;
+    position: relative;
+
+`
