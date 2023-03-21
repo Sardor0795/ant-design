@@ -24,7 +24,7 @@ export const Carousel = () => {
         <CarouselImg style={{ marginTop: "25px" }} src={CImg3} alt="img" />
       </CarouselImgsWrapper>
       <CarouselTitle>
-        All my sliders made in pure <OrangeSpan> HTML </OrangeSpan>
+        All my sliders are made in pure <OrangeSpan> HTML </OrangeSpan>
         <RedSpan>&</RedSpan> <PurpleSpan> CSS </PurpleSpan> and
         <YellowSpan> JS </YellowSpan>
       </CarouselTitle>
