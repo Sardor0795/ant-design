@@ -22,23 +22,25 @@ export class DropDown extends React.Component {
 
     const setSelected = (e) => {
       e.target.parentElement.style.display = "none";
-      e.target.parentElement.parentElement.children[0].children[0].style.transform =
+      e.target.parentElement.parentElement.children[1].children[1].style.transform =
         "rotate(0)";
+
+      e.target.parentElement.parentElement.children[0].children[0].textContent =
+        e.target.textContent;
     };
 
     const btnToggle = (e) => {
       if (e.target.nextElementSibling.style.display === "block") {
         e.target.nextElementSibling.style.display = "none";
-        e.target.children[0].style.transform = "rotate(0)";
+        e.target.children[1].style.transform = "rotate(0)";
       } else {
         e.target.nextElementSibling.style.display = "block";
-        e.target.children[0].style.transform = "rotate(180deg)";
+        e.target.children[1].style.transform = "rotate(180deg)";
       }
     };
 
     const hoverOut = (e) => {
       e.target.parentElement.style.display = "none";
-
       e.target.parentElement.parentElement.children[0].children[0].style.transform =
         "rotate(0)";
     };
@@ -46,7 +48,9 @@ export class DropDown extends React.Component {
     return (
       <BtnWrapContainer>
         <SelectBtn onClick={btnToggle} option={option} {...res}>
-          {children ? children : "Select"}
+          <span style={{ pointerEvents: "none" }}>
+            {children ? children : "Select"}
+          </span>
           <SelectImgWrapper {...res}>
             <svg
               viewBox="0 0 24 24"
@@ -70,10 +74,14 @@ export class DropDown extends React.Component {
           <SelectItemSub onClick={setSelected} option={option} subOption>
             Sub Option 2
           </SelectItemSub>
-          <SelectItemSub onClick={setSelected} option={option} subOption>
+          <SelectItemSub
+            danger
+            option={option}
+            subOption
+          >
             Sub Option danger
           </SelectItemSub>
-          <SelectItem onClick={setSelected} option={option} danger>
+          <SelectItem onClick={setSelected} option={option}>
             {option ? "Option 3" : "Option 1 option 1 to see"}
           </SelectItem>
           <SelectItem onClick={setSelected}>

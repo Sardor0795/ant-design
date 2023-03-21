@@ -29,6 +29,7 @@ export const SelectImgWrapper = styled.span`
   display: ${({ hover }) => (hover ? "none" : "inline-block")};
   width: 20px;
   transition: transform 0.3s ease;
+  pointer-events: none;
 `;
 
 export const SelectDropDownWrapper = styled.div`
@@ -76,9 +77,7 @@ export const SelectItemSub = styled.div`
   }
 `;
 
-
 export const BtnWrapContainer = styled.div`
-    width: 100%;
-    position: relative;
-
-`
+  width: 100%;
+  position: relative;
+`;
