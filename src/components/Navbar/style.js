@@ -47,6 +47,7 @@ const Link = styled(NavLink)`
   text-decoration: none;
   font-size: 15px;
   width: fit-content;
+  user-select: none;
 `;
 const User = styled(PlainLink)`
   color: var(--color);

@@ -5,6 +5,11 @@ import AntDicon from "../../assets/icons/antD.png";
 
 const Container = styled.div`
   display: flex;
+  align-items: flex-start;
+  background-image: url("${AntDicon}");
+  background-repeat: no-repeat;
+  background-position: right 25px bottom 25px;
+  background-size: 90px 90px;
 `;
 
 export { Container };
@@ -17,10 +22,6 @@ export const ComponentsWrapper = styled.div`
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
-  background-image: url("${AntDicon}");
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: 90px 90px;
 `;
 
 export const PathLink = styled(Link)`
@@ -32,6 +33,7 @@ export const PathLink = styled(Link)`
   align-items: center;
   justify-content: center;
   color: #fff;
+  user-select: none;
   text-decoration: none;
   transition: opacity 0.2s ease, background-color 0.2s ease;
   background-color: #227bfeff;

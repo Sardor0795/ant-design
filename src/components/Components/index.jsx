@@ -11,7 +11,9 @@ export const Generic = () => {
 
       <ComponentsWrapper>
         {sidebar.map((v) => (
-          <PathLink key={v.id} to={v.path}>{v.title}</PathLink>
+          <PathLink key={v.id} to={v.path}>
+            {v.title}
+          </PathLink>
         ))}
       </ComponentsWrapper>
     </Container>

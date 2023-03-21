@@ -91,6 +91,7 @@ const Link = styled(NavLink)`
   transition: 0.2s padding ease;
   display: flex;
   align-items: center;
+  user-select: none;
   :hover {
     opacity: 1;
   }
