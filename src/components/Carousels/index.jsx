@@ -1,5 +1,15 @@
 import React from "react";
-import { CarouselImg, CarouselImgsWrapper, CarouselPageWrapper, CarouselTitle } from "./style";
+import {
+  CarouselImg,
+  CarouselImgsWrapper,
+  CarouselPageWrapper,
+  CarouselTitle,
+  OrangeSpan,
+  PathLink,
+  PurpleSpan,
+  RedSpan,
+  YellowSpan,
+} from "./style";
 
 import CImg1 from "../../assets/img/c_1.jpg";
 import CImg2 from "../../assets/img/c_2.jpg";
@@ -13,8 +23,12 @@ export const Carousel = () => {
         <CarouselImg src={CImg2} alt="img" />
         <CarouselImg style={{ marginTop: "25px" }} src={CImg3} alt="img" />
       </CarouselImgsWrapper>
-      <CarouselTitle>All my sliders made in pure HTML&CSS and JS</CarouselTitle>
-      
+      <CarouselTitle>
+        All my sliders made in pure <OrangeSpan> HTML </OrangeSpan>
+        <RedSpan>&</RedSpan> <PurpleSpan> CSS </PurpleSpan> and
+        <YellowSpan> JS </YellowSpan>
+      </CarouselTitle>
+      <PathLink to={"https://self-made-sliders.netlify.app/"}>Visit</PathLink>
     </CarouselPageWrapper>
   );
 };
