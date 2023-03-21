@@ -8,7 +8,7 @@ import { Inputs } from "../components/Inputs";
 import { Alert } from "../components/Alerts";
 import { Badge } from "../components/Badges";
 import { Checkbox } from "../components/Checkbox";
-import { Dropdown } from "../components/Dropdown";
+import { Dropdown } from "../components/Dropdowns";
 import { Table } from "../components/Table";
 import { Tooltip } from "../components/Tooltips";
 import { Switch } from "../components/Switchs";
