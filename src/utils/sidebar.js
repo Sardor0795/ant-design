@@ -12,6 +12,7 @@ import { Dropdown } from "../components/Dropdown";
 import { Table } from "../components/Table";
 import { Tooltip } from "../components/Tooltips";
 import { Switch } from "../components/Switchs";
+import { Carousel } from "../components/Carousels";
 
 export const sidebar = [
   {
@@ -180,10 +181,10 @@ export const sidebar = [
     id: 19,
     title: "Carousel",
     path: "/components/carousel",
-    element: <Generic />,
+    element: <Carousel />,
     imgHour: HourImg,
     imgCheck: CheckImg,
-    fulfilled: false,
+    fulfilled: true,
   },
   {
     id: 20,
