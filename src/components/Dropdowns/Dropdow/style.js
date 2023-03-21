@@ -18,8 +18,12 @@ export const SelectBtn = styled.button`
     border-color: ${({ disabled }) => (disabled ? null : "var(--info)")};
     color: ${({ disabled }) => (disabled ? null : "var(--info)")};
   }
-  &:hover div {
-    display: ${({ disabled }) => (disabled ? null : "block")};
+  &:hover > div {
+    display: ${({ disabled, hover, option }) =>
+      (disabled && !hover) || option ? null : "block"};
+  }
+  &:focus > div {
+    display: ${({ option }) => (option ? "block" : null)};
   }
 `;
 
@@ -44,13 +48,32 @@ export const SelectDropDownWrapper = styled.div`
 
 export const SelectItem = styled.div`
   width: 100%;
-  padding: ${({ subOption }) => (subOption ? "15px 15px 15px 40px" : "15px 25px")} ;
+  padding: ${({ subOption }) =>
+    subOption ? "15px 15px 15px 40px" : "15px 25px"};
   border-radius: 4px;
   display: flex;
   align-items: center;
   background-color: #fff;
   color: ${({ subOption }) => (subOption ? "#676767FF" : "#202020")};
   :hover {
-    background-color: #f2f2f2;
+    background-color: ${({ danger, option }) =>
+      danger && !option ? "red" : "#f2f2f2"};
+    color: ${({ danger, option }) => (danger && !option ? "#fff" : null)};
+  }
+`;
+
+export const SelectItemSub = styled.div`
+  width: 100%;
+  padding: ${({ subOption }) =>
+    subOption ? "15px 15px 15px 40px" : "15px 25px"};
+  border-radius: 4px;
+  display: ${({ option }) => (option ? "none" : "flex")};
+  align-items: center;
+  background-color: #fff;
+  color: ${({ subOption }) => (subOption ? "#676767FF" : "#202020")};
+  :hover {
+    background-color: ${({ danger, option }) =>
+      danger && !option ? "red" : "#f2f2f2"};
+    color: ${({ danger }) => (danger ? "#fff" : null)};
   }
 `;

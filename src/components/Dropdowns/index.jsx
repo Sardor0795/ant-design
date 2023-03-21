@@ -29,9 +29,28 @@ export const Dropdown = () => {
               Option 1 option 1 to see
             </DropDown>
           </Card>
+          <Card type="basic with aligning top" desc={"The most basic dropdown menu."}>
+            <DropDown option="option">
+            </DropDown>
+          </Card>
         </LayoutContainer>
         <LayoutContainer>
-          <Card></Card>
+          <Card type="basic with aligning top" desc={"The most basic dropdown menu."}>
+            <DropDown option="option">
+            </DropDown>
+          </Card>
+          <Card type="Button with dropdown menu aligned to bottom" desc={"A button is on the left, and a related functional menu is on the right. You can set the icon property to modify the icon of right."}>
+            <DropDown option="option">
+            </DropDown>
+            <DropDown option="option">
+            </DropDown>
+            <DropDown option="option">
+            </DropDown>
+            <DropDown option="option">
+            </DropDown>
+            <DropDown option="option">
+            </DropDown>
+          </Card>
         </LayoutContainer>
       </LayoutWrapper>
     </>
