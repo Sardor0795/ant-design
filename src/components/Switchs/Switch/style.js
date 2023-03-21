@@ -52,6 +52,7 @@ export const SwitchWrapper = styled.div`
   display: flex;
   align-items: center;
   position: relative;
+  transition: background-color 0.3s ease;
 `;
 
 export const SwitchInner = styled.div`

@@ -11,27 +11,33 @@ export const Switch = () => {
   const toggleSwitchLarge = (e) => {
     if (indicator1) {
       e.target.children[0].style.transform = "translateX(0)";
+      e.target.style.backgroundColor = "purple";
       indicator1 -= 1;
     } else {
       e.target.children[0].style.transform = "translateX(24px)";
+      e.target.style.backgroundColor = "red";
       indicator1 += 1;
     }
   };
   const toggleSwitchMedium = (e) => {
     if (indicator2) {
       e.target.children[0].style.transform = "translateX(0)";
+      e.target.style.backgroundColor = "purple";
       indicator2 -= 1;
     } else {
       e.target.children[0].style.transform = "translateX(16px)";
+      e.target.style.backgroundColor = "red";
       indicator2 += 1;
     }
   };
   const toggleSwitchSmall = (e) => {
     if (indicator3) {
       e.target.children[0].style.transform = "translateX(0)";
+      e.target.style.backgroundColor = "purple";
       indicator3 -= 1;
     } else {
       e.target.children[0].style.transform = "translateX(10px)";
+      e.target.style.backgroundColor = "red";
       indicator3 += 1;
     }
   };
