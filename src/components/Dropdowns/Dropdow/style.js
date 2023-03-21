@@ -9,18 +9,48 @@ export const SelectBtn = styled.button`
   border-radius: 4px;
   background: none;
   text-align: left;
-  border: var(--border);
+  border-color: ${({ hover }) => (hover ? "var(--info)" : null)};
+  color: ${({ hover }) => (hover ? "var(--info)" : null)};
+  border: ${({ hover }) => (hover ? "none" : "var(--border)")};
   cursor: ${({ disabled }) => (disabled ? "not-allowed" : "pointer")};
   transition: color 0.3s ease, backgroundColor 0.3s ease;
   :hover {
     border-color: ${({ disabled }) => (disabled ? null : "var(--info)")};
     color: ${({ disabled }) => (disabled ? null : "var(--info)")};
   }
+  &:hover div {
+    display: ${({ disabled }) => (disabled ? null : "block")};
+  }
 `;
 
-export const SelectImgWrapper = styled.div`
+export const SelectImgWrapper = styled.span`
   position: absolute;
   right: 15px;
   display: inline-block;
   width: 20px;
+`;
+
+export const SelectDropDownWrapper = styled.div`
+  width: 100%;
+  position: absolute;
+  border-radius: 4px;
+  left: 0;
+  top: 100%;
+  display: none;
+  background-color: #fff;
+  z-index: 50;
+  box-shadow: var(--shadow);
+`;
+
+export const SelectItem = styled.div`
+  width: 100%;
+  padding: ${({ subOption }) => (subOption ? "15px 15px 15px 40px" : "15px 25px")} ;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  color: ${({ subOption }) => (subOption ? "#676767FF" : "#202020")};
+  :hover {
+    background-color: #f2f2f2;
+  }
 `;

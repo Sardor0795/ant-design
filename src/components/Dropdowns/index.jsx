@@ -24,6 +24,11 @@ export const Dropdown = () => {
           <Card type="disabled with arrow" desc={"The most basic dropdown menu."}>
             <DropDown disabled="disabled"></DropDown>
           </Card>
+          <Card type="basic" desc={"The most basic dropdown with hover prop"}>
+            <DropDown hover="hover">
+              Option 1 option 1 to see
+            </DropDown>
+          </Card>
         </LayoutContainer>
         <LayoutContainer>
           <Card></Card>
