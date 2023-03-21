@@ -22,7 +22,7 @@ export class DropDown extends React.Component {
 
     const setSelected = (e) => {
       e.target.parentElement.style.display = "none";
-      e.target.parentElement.parentElement.children[1].children[1].style.transform =
+      e.target.parentElement.parentElement.children[0].children[1].style.transform =
         "rotate(0)";
 
       e.target.parentElement.parentElement.children[0].children[0].textContent =
@@ -41,7 +41,7 @@ export class DropDown extends React.Component {
 
     const hoverOut = (e) => {
       e.target.parentElement.style.display = "none";
-      e.target.parentElement.parentElement.children[0].children[0].style.transform =
+      e.target.parentElement.parentElement.children[0].children[1].style.transform =
         "rotate(0)";
     };
 
@@ -74,11 +74,7 @@ export class DropDown extends React.Component {
           <SelectItemSub onClick={setSelected} option={option} subOption>
             Sub Option 2
           </SelectItemSub>
-          <SelectItemSub
-            danger
-            option={option}
-            subOption
-          >
+          <SelectItemSub danger option={option} subOption>
             Sub Option danger
           </SelectItemSub>
           <SelectItem onClick={setSelected} option={option}>
