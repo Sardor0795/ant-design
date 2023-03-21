@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "../Card";
 import { LayoutContainer, LayoutWrapper } from "../Layout/style";
+import { DropDown } from "./Dropdow";
 import { DropdownList, DropdownText, DropdownTitle } from "./style";
 
 export const Dropdown = () => {
@@ -20,7 +21,9 @@ export const Dropdown = () => {
 
       <LayoutWrapper>
         <LayoutContainer>
-          <Card></Card>
+          <Card type="disabled with arrow" desc={"The most basic dropdown menu."}>
+            <DropDown disabled="disabled"></DropDown>
+          </Card>
         </LayoutContainer>
         <LayoutContainer>
           <Card></Card>
