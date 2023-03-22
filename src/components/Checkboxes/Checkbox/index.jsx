@@ -3,11 +3,10 @@ import { CheckboxInner, CheckboxWrapper } from "./style";
 
 export const CheckBoxGeneric = () => {
   const toggleCheckbox = (e) => {
-    console.log(e.target);
-    if (e.target.children[0]) {
+    if (e.target.children[0].style.display === "flex") {
       e.target.children[0].style.display = "none";
     } else {
-      
+      e.target.children[0].style.display = "flex";
     }
   };
   return (

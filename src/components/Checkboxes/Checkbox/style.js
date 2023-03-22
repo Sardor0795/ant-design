@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
 export const CheckboxWrapper = styled.div`
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border: 1px solid #000;
   border-radius: 4px;
 `;
 
 export const CheckboxInner = styled.div`
   pointer-events: none;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 4px;
   background-color: blue;
   position: relative;
@@ -20,8 +20,8 @@ export const CheckboxInner = styled.div`
   ::before {
     content: "";
     pointer-events: none;
-    width: 10px;
-    height: 25px;
+    width: 5px;
+    height: 17px;
     background-color: transparent;
     border: 3px solid transparent;
     border-right-color: #fff;
