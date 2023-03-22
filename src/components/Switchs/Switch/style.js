@@ -69,13 +69,13 @@ export const SwitchRightInfo = styled.span`
   color: #fff;
   font-size: 15px;
   position: absolute;
-  right: 5px;
+  right: 6px;
   pointer-events: none;
 `;
 export const SwitchLeftInfo = styled.span`
   color: #fff;
   font-size: 15px;
   position: absolute;
-  left: 5px;
+  left: 6px;
   pointer-events: none;
 `;

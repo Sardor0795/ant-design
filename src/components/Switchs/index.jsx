@@ -7,41 +7,41 @@ import { SwitchComp } from "./Switch";
 export const Switch = () => {
   let disabled = 0;
   const toggleSwitchLarge = (e) => {
-    if (e.target.children[0].style.transform === "translateX(24px)") {
-      e.target.children[0].style.transform = "translateX(0)";
+    if (e.target.children[1].style.transform === "translateX(24px)") {
+      e.target.children[1].style.transform = "translateX(0)";
       e.target.style.backgroundColor = "purple";
     } else {
-      e.target.children[0].style.transform = "translateX(24px)";
+      e.target.children[1].style.transform = "translateX(24px)";
       e.target.style.backgroundColor = "red";
     }
   };
   const toggleSwitchMedium = (e) => {
-    if (e.target.children[0].style.transform === "translateX(16px)") {
-      e.target.children[0].style.transform = "translateX(0)";
+    if (e.target.children[1].style.transform === "translateX(16px)") {
+      e.target.children[1].style.transform = "translateX(0)";
       e.target.style.backgroundColor = "purple";
     } else {
-      e.target.children[0].style.transform = "translateX(16px)";
+      e.target.children[1].style.transform = "translateX(16px)";
       e.target.style.backgroundColor = "red";
     }
   };
   const toggleSwitchSmall = (e) => {
-    if (e.target.children[0].style.transform === "translateX(10px)") {
-      e.target.children[0].style.transform = "translateX(0)";
+    if (e.target.children[1].style.transform === "translateX(10px)") {
+      e.target.children[1].style.transform = "translateX(0)";
       e.target.style.backgroundColor = "purple";
     } else {
-      e.target.children[0].style.transform = "translateX(10px)";
+      e.target.children[1].style.transform = "translateX(10px)";
       e.target.style.backgroundColor = "red";
     }
   };
   const disableBtn = (e) => {
     if (disabled) {
-      e.target.parentElement.children[0].style.cssText = `
+      e.target.parentElement.children[1].style.cssText = `
       opacity: 1;
       pointer-events: unset;
      `;
       disabled -= 1;
     } else {
-      e.target.parentElement.children[0].style.cssText = `
+      e.target.parentElement.children[1].style.cssText = `
       opacity: 0.5;
       pointer-events: none;
      `;
