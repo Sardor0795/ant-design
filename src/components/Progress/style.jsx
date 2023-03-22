@@ -22,7 +22,7 @@ export const ProgressList = styled.ul`
 
 export const BasicWrapper = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 100%;
 `;
 

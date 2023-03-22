@@ -150,6 +150,11 @@ export class Progress extends React.Component {
                 type="line"
               />
             </Card>
+            <Card type="Circular Progress" desc="Circular progress bar">
+              <BasicWrapper>
+                <CircularProgress size="medium" info="29" />
+              </BasicWrapper>
+            </Card>
           </LayoutContainer>
           <LayoutContainer>
             <Card
@@ -167,12 +172,19 @@ export class Progress extends React.Component {
             </Card>
             <Card type="Circular Progress" desc="Circular progress bar">
               <BasicWrapper>
-                <CircularProgress info={circularProgress} />
+                <CircularProgress size="large" info={circularProgress} />
               </BasicWrapper>
               <BtnsWrapper>
                 <PlusBtn onClick={setCircularPlus}>+</PlusBtn>
                 <MinusBtn onClick={setCircularMinus}>-</MinusBtn>
               </BtnsWrapper>
+            </Card>
+            <Card type="Circular Progress" desc="Circular progress bar">
+              <BasicWrapper>
+                <CircularProgress size="small" info="100" />
+                <CircularProgress size="small" info="20" />
+                <CircularProgress size="small" info="45" />
+              </BasicWrapper>
             </Card>
           </LayoutContainer>
         </LayoutWrapper>

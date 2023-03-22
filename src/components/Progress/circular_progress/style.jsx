@@ -1,18 +1,64 @@
 import styled from "styled-components";
 
+const getWSize = ({ size }) => {
+  switch (size) {
+    case "small":
+      return {
+        width: "100px",
+        height: "100px",
+      };
+    case "medium":
+      return {
+        width: "150px",
+        height: "150px",
+      };
+    case "large":
+      return {
+        width: "200px",
+        height: "200px",
+      };
+    default:
+      return {};
+  }
+};
+
+const getISize = ({ size }) => {
+  switch (size) {
+    case "small":
+      return {
+        width: "80px",
+        height: "80px",
+      };
+    case "medium":
+      return {
+        width: "120px",
+        height: "120px",
+      };
+    case "large":
+      return {
+        width: "160px",
+        height: "160px",
+      };
+    default:
+      return {};
+  }
+};
+
 export const CircularWrapper = styled.div`
-  width: 200px;
-  height: 200px;
+  ${getWSize}
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: conic-gradient(#7d2ae8 288deg, #ededed 0deg);
+  background: conic-gradient(
+    ${({ info }) => (info < 30 ? "var(--dangerColor)" : "#7d2ae8")}
+      ${({ info }) => info * 3.6}deg,
+    #ededed 0deg
+  );
 `;
 
 export const CircularInner = styled.div`
-  width: 160px;
-  height: 160px;
+  ${getISize}
   background-color: #fff;
   border-radius: 50%;
   display: flex;
@@ -20,5 +66,5 @@ export const CircularInner = styled.div`
   justify-content: center;
   font-size: 25px;
   font-weight: bold;
-  color: #7d2ae8;
+  color: ${({ info }) => (info < 30 ? "var(--dangerColor)" : "#7d2ae8")};
 `;
