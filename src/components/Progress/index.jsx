@@ -46,6 +46,8 @@ export class Progress extends React.Component {
           }deg, #ededed 0deg);
           `;
           e.target.parentElement.parentElement.children[0].children[0].children[0].innerText = `${circularProgress}%`;
+          e.target.parentElement.parentElement.children[0].children[0].children[0].style.color =
+            "var(--dangerColor)";
         } else {
           e.target.parentElement.parentElement.children[0].children[0].style.cssText = `
           background: conic-gradient(#7d2ae8 ${
@@ -53,6 +55,8 @@ export class Progress extends React.Component {
           }deg, #ededed 0deg);
           `;
           e.target.parentElement.parentElement.children[0].children[0].children[0].innerText = `${circularProgress}%`;
+          e.target.parentElement.parentElement.children[0].children[0].children[0].style.color =
+            "#7d2ae8";
         }
       }
     };
@@ -66,6 +70,8 @@ export class Progress extends React.Component {
           }deg, #ededed 0deg);
           `;
           e.target.parentElement.parentElement.children[0].children[0].children[0].innerText = `${circularProgress}%`;
+          e.target.parentElement.parentElement.children[0].children[0].children[0].style.color =
+            "var(--dangerColor)";
         } else {
           e.target.parentElement.parentElement.children[0].children[0].style.cssText = `
           background: conic-gradient(#7d2ae8 ${
@@ -73,6 +79,8 @@ export class Progress extends React.Component {
           }deg, #ededed 0deg);
           `;
           e.target.parentElement.parentElement.children[0].children[0].children[0].innerText = `${circularProgress}%`;
+          e.target.parentElement.parentElement.children[0].children[0].children[0].style.color =
+            "#7d2ae8";
         }
       }
     };

@@ -20,4 +20,5 @@ export const CircularInner = styled.div`
   justify-content: center;
   font-size: 25px;
   font-weight: bold;
+  color: #7d2ae8;
 `;
