@@ -35,13 +35,13 @@ export const Switch = () => {
   };
   const disableBtn = (e) => {
     if (disabled) {
-      e.target.parentElement.children[1].style.cssText = `
+      e.target.parentElement.children[0].style.cssText = `
       opacity: 1;
       pointer-events: unset;
      `;
       disabled -= 1;
     } else {
-      e.target.parentElement.children[1].style.cssText = `
+      e.target.parentElement.children[0].style.cssText = `
       opacity: 0.5;
       pointer-events: none;
      `;
