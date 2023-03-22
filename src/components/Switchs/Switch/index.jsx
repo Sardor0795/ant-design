@@ -9,9 +9,9 @@ import {
 export const SwitchComp = ({ rightInfo, leftInfo, ...res }) => {
   return (
     <SwitchWrapper {...res}>
-      <SwitchLeftInfo>{leftInfo ? leftInfo : null}</SwitchLeftInfo>
+      <SwitchLeftInfo {...res}>{leftInfo ? leftInfo : null}</SwitchLeftInfo>
       <SwitchInner {...res} />
-      <SwitchRightInfo>{rightInfo ? rightInfo : null}</SwitchRightInfo>
+      <SwitchRightInfo {...res}>{rightInfo ? rightInfo : null}</SwitchRightInfo>
     </SwitchWrapper>
   );
 };

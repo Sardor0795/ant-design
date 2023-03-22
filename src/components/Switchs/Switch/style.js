@@ -67,15 +67,19 @@ export const SwitchInner = styled.div`
 
 export const SwitchRightInfo = styled.span`
   color: #fff;
-  font-size: 15px;
+  font-size: ${({ size }) =>
+    size === "large" ? "15px" : size === "medium" ? "10px" : "7px"};
   position: absolute;
-  right: 6px;
+  right: ${({ size }) =>
+    size === "large" ? "6px" : size === "medium" ? "4px" : "2px"};
   pointer-events: none;
 `;
 export const SwitchLeftInfo = styled.span`
   color: #fff;
-  font-size: 15px;
+  font-size: ${({ size }) =>
+    size === "large" ? "15px" : size === "medium" ? "10px" : "7px"};
   position: absolute;
-  left: 6px;
+  left: ${({ size }) =>
+    size === "large" ? "6px" : size === "medium" ? "4px" : "2px"};
   pointer-events: none;
 `;

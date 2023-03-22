@@ -99,8 +99,8 @@ export const Switch = () => {
           >
             <div>
               <SwitchComp leftInfo="on" rightInfo="off" onClick={toggleSwitchLarge} size="large" />
-              <SwitchComp onClick={toggleSwitchMedium} size="medium" />
-              <SwitchComp onClick={toggleSwitchSmall} size="small" />
+              <SwitchComp leftInfo="on" rightInfo="off" onClick={toggleSwitchMedium} size="medium" />
+              <SwitchComp leftInfo="on" rightInfo="off" onClick={toggleSwitchSmall} size="small" />
             </div>
           </Card>
         </LayoutContainer>
