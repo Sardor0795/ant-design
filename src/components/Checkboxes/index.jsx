@@ -3,7 +3,12 @@ import Card from "../Card";
 import { LayoutContainer, LayoutWrapper } from "../Layout/style";
 import { CheckBoxGeneric } from "./Checkbox";
 import { MiniCheckboxProject } from "./Mini_project";
-import { CheckboxList, CheckboxText, CheckboxTitle } from "./style";
+import {
+  BasicWrapper,
+  CheckboxList,
+  CheckboxText,
+  CheckboxTitle,
+} from "./style";
 
 export const Checkbox = () => {
   return (
@@ -24,7 +29,11 @@ export const Checkbox = () => {
       <LayoutWrapper>
         <LayoutContainer>
           <Card>
-            <CheckBoxGeneric />
+            <BasicWrapper>
+              <CheckBoxGeneric size="large" /> Large
+              <CheckBoxGeneric size="medium" /> Medium
+              <CheckBoxGeneric size="small" /> Small
+            </BasicWrapper>
           </Card>
         </LayoutContainer>
         <LayoutContainer>

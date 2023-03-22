@@ -1,7 +1,7 @@
 import React from "react";
 import { CheckboxInner, CheckboxWrapper } from "./style";
 
-export const CheckBoxGeneric = () => {
+export const CheckBoxGeneric = ({...res}) => {
   const toggleCheckbox = (e) => {
     if (e.target.children[0].style.display === "flex") {
       e.target.children[0].style.display = "none";
@@ -11,8 +11,8 @@ export const CheckBoxGeneric = () => {
   };
   return (
     <div>
-      <CheckboxWrapper onClick={toggleCheckbox}>
-        <CheckboxInner />
+      <CheckboxWrapper {...res} onClick={toggleCheckbox}>
+        <CheckboxInner {...res} />
       </CheckboxWrapper>
     </div>
   );

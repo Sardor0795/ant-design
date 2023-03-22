@@ -19,3 +19,8 @@ export const CheckboxList = styled.ul`
   list-style-type: circle;
   margin-bottom: 50px;
 `;
+
+export const BasicWrapper = styled.div`
+  display: flex;
+  align-items: center;
+`;
