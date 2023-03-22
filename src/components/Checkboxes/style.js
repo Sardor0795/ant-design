@@ -20,7 +20,3 @@ export const CheckboxList = styled.ul`
   margin-bottom: 50px;
 `;
 
-export const BasicWrapper = styled.div`
-  display: flex;
-  align-items: center;
-`;

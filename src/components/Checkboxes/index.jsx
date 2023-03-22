@@ -4,7 +4,6 @@ import { LayoutContainer, LayoutWrapper } from "../Layout/style";
 import { CheckBoxGeneric } from "./Checkbox";
 import { MiniCheckboxProject } from "./Mini_project";
 import {
-  BasicWrapper,
   CheckboxList,
   CheckboxText,
   CheckboxTitle,
@@ -28,12 +27,10 @@ export const Checkbox = () => {
 
       <LayoutWrapper>
         <LayoutContainer>
-          <Card>
-            <BasicWrapper>
-              <CheckBoxGeneric size="large" /> Large
-              <CheckBoxGeneric size="medium" /> Medium
-              <CheckBoxGeneric size="small" /> Small
-            </BasicWrapper>
+          <Card type="Basic" desc={"default props with differnt size and lableText"}>
+              <CheckBoxGeneric text="Large" size="large" />
+              <CheckBoxGeneric text="Medium" size="medium" />
+              <CheckBoxGeneric text="small" size="small" />
           </Card>
         </LayoutContainer>
         <LayoutContainer>

@@ -44,17 +44,26 @@ const getISize = ({ size }) => {
   }
 };
 
+export const CheckboxLabel = styled.div`
+  user-select: none;
+  display: flex;
+  align-items: center;
+  :hover > div {
+    opacity: 1;
+    box-shadow: 0 0 2px 0 var(--primary);
+  }
+`;
+
 export const CheckboxWrapper = styled.div`
+  pointer-events: none;
   width: 25px;
   height: 25px;
   margin: 10px;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
   border: 1px solid var(--info);
   border-radius: 4px;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  :hover {
-    border-color: var(--primary);
-    box-shadow: 0 0 2px 0 var(--primary);
-  }
   ${getWSize}
 `;
 

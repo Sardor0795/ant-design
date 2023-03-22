@@ -1,19 +1,22 @@
 import React from "react";
-import { CheckboxInner, CheckboxWrapper } from "./style";
+import { CheckboxInner, CheckboxLabel, CheckboxWrapper } from "./style";
 
-export const CheckBoxGeneric = ({...res}) => {
+export const CheckBoxGeneric = ({ text, ...res }) => {
   const toggleCheckbox = (e) => {
-    if (e.target.children[0].style.display === "flex") {
-      e.target.children[0].style.display = "none";
+    if (e.target.children[0].children[0].style.display === "flex") {
+      e.target.children[0].children[0].style.display = "none";
+      e.target.children[0].style.opacity = "0.5";
     } else {
-      e.target.children[0].style.display = "flex";
+      e.target.children[0].children[0].style.display = "flex";
+      e.target.children[0].style.opacity = "1";
     }
   };
   return (
-    <div>
-      <CheckboxWrapper {...res} onClick={toggleCheckbox}>
+    <CheckboxLabel onClick={toggleCheckbox}>
+      <CheckboxWrapper {...res}>
         <CheckboxInner {...res} />
       </CheckboxWrapper>
-    </div>
+      {text}
+    </CheckboxLabel>
   );
 };
