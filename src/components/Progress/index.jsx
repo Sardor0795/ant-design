@@ -150,15 +150,25 @@ export class Progress extends React.Component {
                 type="line"
               />
             </Card>
-            <Card type="Circular Progress" desc="Circular progress bar less state">
+            <Card
+              type="Circular Progress"
+              desc="Circular progress bar less state"
+            >
               <BasicWrapper>
                 <CircularProgress size="medium" info="29" />
               </BasicWrapper>
             </Card>
-            <Card type="Circular Progress" desc="Circular progress bar more colors">
+            <Card
+              type="Circular Progress"
+              desc="Circular progress bar more colors"
+            >
               <BasicWrapper>
                 <CircularProgress color="var(--info)" size="small" info="68" />
-                <CircularProgress color="var(--warning)" size="small" info="100" />
+                <CircularProgress
+                  color="var(--warning)"
+                  size="small"
+                  info="100"
+                />
                 <CircularProgress color="darkgreen" size="small" info="76" />
               </BasicWrapper>
             </Card>
@@ -177,7 +187,10 @@ export class Progress extends React.Component {
               <LineBtn onClick={setLineProgress}>+</LineBtn>
               <LineBtn onClick={setLineProgress}>-</LineBtn>
             </Card>
-            <Card type="Circular Progress" desc="Circular progress bar value changeable">
+            <Card
+              type="Circular Progress"
+              desc="Circular progress bar value changeable"
+            >
               <BasicWrapper>
                 <CircularProgress size="large" info={circularProgress} />
               </BasicWrapper>
@@ -186,7 +199,10 @@ export class Progress extends React.Component {
                 <MinusBtn onClick={setCircularMinus}>-</MinusBtn>
               </BtnsWrapper>
             </Card>
-            <Card type="Circular Progress" desc="Circular progress bar more colors">
+            <Card
+              type="Circular Progress"
+              desc="Circular progress bar more colors"
+            >
               <BasicWrapper>
                 <CircularProgress color="limegreen" size="small" info="95" />
                 <CircularProgress color="fuchsia" size="small" info="35" />
