@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "../Card";
 import { LayoutContainer, LayoutWrapper } from "../Layout/style";
+import { SwichMiniProject } from "./Mini_project";
 import { DisabledBtn, SwitchList, SwitchText, SwitchTitle } from "./style";
 import { SwitchComp } from "./Switch";
 
@@ -102,6 +103,12 @@ export const Switch = () => {
               <SwitchComp leftInfo="on" rightInfo="off" onClick={toggleSwitchMedium} size="medium" />
               <SwitchComp leftInfo="on" rightInfo="off" onClick={toggleSwitchSmall} size="small" />
             </div>
+          </Card>
+          <Card
+            type="Mini Project"
+            desc={"Light mode / Dark mode project using swich"}
+          >
+            <SwichMiniProject/>
           </Card>
         </LayoutContainer>
         <LayoutContainer>

@@ -24,12 +24,15 @@ export const Checkbox = () => {
       <LayoutWrapper>
         <LayoutContainer>
           <Card>
-            <CheckBoxGeneric/>
+            <CheckBoxGeneric />
           </Card>
         </LayoutContainer>
         <LayoutContainer>
-          <Card type="Mini Project" desc={"Made with css :checked style. No using JS!"}>
-            <MiniCheckboxProject/>
+          <Card
+            type="Mini Project"
+            desc={"Made with css :checked style. No using JS!"}
+          >
+            <MiniCheckboxProject />
           </Card>
         </LayoutContainer>
       </LayoutWrapper>
