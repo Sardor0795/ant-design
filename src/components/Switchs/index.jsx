@@ -105,7 +105,46 @@ export const Switch = () => {
           </Card>
         </LayoutContainer>
         <LayoutContainer>
-          <Card></Card>
+        <Card
+            type="with icon"
+            desc={"tick and cross switch accepts size, bgChecked, bgNotChecked props"}
+          >
+            <div>
+              <SwitchComp leftInfo="on" rightInfo="x" onClick={toggleSwitchLarge} size="large" />
+              <SwitchComp leftInfo="on" rightInfo="x" onClick={toggleSwitchMedium} size="medium" />
+              <SwitchComp leftInfo="on" rightInfo="x" onClick={toggleSwitchSmall} size="small" />
+            </div>
+          </Card>
+        <Card
+            type="1 and 0"
+            desc={"1 and 0 switch accepts size, bgChecked, bgNotChecked props"}
+          >
+            <div>
+              <SwitchComp leftInfo="1" rightInfo="0" onClick={toggleSwitchLarge} size="large" />
+              <SwitchComp leftInfo="1" rightInfo="0" onClick={toggleSwitchMedium} size="medium" />
+              <SwitchComp leftInfo="1" rightInfo="0" onClick={toggleSwitchSmall} size="small" />
+            </div>
+          </Card>
+        <Card
+            type="Size"
+            desc={"basic three sizes switch accepts size, bgChecked, bgNotChecked props"}
+          >
+            <div>
+              <SwitchComp onClick={toggleSwitchSmall} size="small" />
+              <SwitchComp onClick={toggleSwitchMedium} size="medium" />
+              <SwitchComp onClick={toggleSwitchLarge} size="large" />
+            </div>
+          </Card>
+        <Card
+            type="Loading"
+            desc={"loading switch accepts loading, size, bgChecked, bgNotChecked props"}
+          >
+            <div>
+              <SwitchComp load="load" onClick={toggleSwitchLarge} size="large" />
+              <SwitchComp load="load" onClick={toggleSwitchMedium} size="medium" />
+              <SwitchComp onClick={toggleSwitchSmall} size="small" />
+            </div>
+          </Card>
         </LayoutContainer>
       </LayoutWrapper>
     </>

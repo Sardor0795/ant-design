@@ -25,7 +25,7 @@ const Buttons = () => {
             }}
             type="primary"
           >
-            <LoadImage src={LoadImg} alt="" /> Click me
+            <LoadImage src={LoadImg} alt="img" /> Click me
           </Button>
           <Button
             style={{
@@ -36,7 +36,7 @@ const Buttons = () => {
             width="110px"
             type="primary"
           >
-            <LoadImage src={LoadImg} alt="" /> Click me
+            <LoadImage src={LoadImg} alt="img" /> Click me
           </Button>
           <Button
             style={{
@@ -47,7 +47,7 @@ const Buttons = () => {
             width="small"
             type="primary"
           >
-            <LoadImage src={LoadImg} alt="" />
+            <LoadImage src={LoadImg} alt="img" />
             Click me
           </Button>
         </Card>

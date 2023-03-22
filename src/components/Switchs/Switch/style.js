@@ -1,4 +1,14 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import LoadImg from "../../../assets/icons/loader.png";
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+`;
 
 const getWSize = ({ size }) => {
   switch (size) {
@@ -53,6 +63,7 @@ export const SwitchWrapper = styled.div`
   align-items: center;
   position: relative;
   transition: background-color 0.3s ease;
+  pointer-events: ${({ load }) => (load ? "none" : null)};
 `;
 
 export const SwitchInner = styled.div`
@@ -63,6 +74,8 @@ export const SwitchInner = styled.div`
   position: absolute;
   pointer-events: none;
   transition: 0.3s ease all;
+  padding: 2px;
+  opacity: ${({ load }) => (load ? "0.9" : null)};
 `;
 
 export const SwitchRightInfo = styled.span`
@@ -71,7 +84,7 @@ export const SwitchRightInfo = styled.span`
     size === "large" ? "15px" : size === "medium" ? "10px" : "7px"};
   position: absolute;
   right: ${({ size }) =>
-    size === "large" ? "6px" : size === "medium" ? "4px" : "2px"};
+    size === "large" ? "6px" : size === "medium" ? "4px" : "3px"};
   pointer-events: none;
 `;
 export const SwitchLeftInfo = styled.span`
@@ -80,6 +93,19 @@ export const SwitchLeftInfo = styled.span`
     size === "large" ? "15px" : size === "medium" ? "10px" : "7px"};
   position: absolute;
   left: ${({ size }) =>
-    size === "large" ? "6px" : size === "medium" ? "4px" : "2px"};
+    size === "large" ? "6px" : size === "medium" ? "4px" : "3px"};
+  pointer-events: none;
+`;
+
+export const LoadImage = styled.span`
+  background-image: url("${LoadImg}");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: ${({ load }) => (load === "load" ? "block" : "none")};
+  animation: ${({ load }) => (load === "load" ? rotate : null)} 2s linear
+    infinite;
   pointer-events: none;
 `;
