@@ -1,9 +1,18 @@
 import React from "react";
 import Card from "../Card";
 import { LayoutContainer, LayoutWrapper } from "../Layout/style";
+import { CircularProgress } from "./circular_progress";
 import { ProgressMaker } from "./prgrs";
 import { LineBtn } from "./prgrs/style";
-import { ProgressList, ProgressText, ProgressTitle } from "./style";
+import {
+  BasicWrapper,
+  BtnsWrapper,
+  MinusBtn,
+  PlusBtn,
+  ProgressList,
+  ProgressText,
+  ProgressTitle,
+} from "./style";
 
 export class Progress extends React.Component {
   constructor(props) {
@@ -22,6 +31,31 @@ export class Progress extends React.Component {
         if (this.state.lineProgress >= 10) {
           this.setState({ lineProgress: this.state.lineProgress - 10 });
         }
+      }
+    };
+
+    let circularProgress = 80;
+
+    const setCircularPlus = (e) => {
+      if (circularProgress <= 99) {
+        circularProgress += 1;
+        e.target.parentElement.parentElement.children[0].children[0].style.cssText = `
+        background: conic-gradient(#7d2ae8 ${
+          circularProgress * 3.6
+        }deg, #ededed 0deg);
+        `;
+        e.target.parentElement.parentElement.children[0].children[0].children[0].innerText = `${circularProgress}%`;
+      }
+    };
+    const setCircularMinus = (e) => {
+      if (circularProgress >= 3) {
+        circularProgress -= 1;
+        e.target.parentElement.parentElement.children[0].children[0].style.cssText = `
+        background: conic-gradient(#7d2ae8 ${
+          circularProgress * 3.6
+        }deg, #ededed 0deg);
+        `;
+        e.target.parentElement.parentElement.children[0].children[0].children[0].innerText = `${circularProgress}%`;
       }
     };
     return (
@@ -67,7 +101,10 @@ export class Progress extends React.Component {
                 type="line"
               />
             </Card>
-            <Card type="basic with status" desc="active, success and exception statuses.">
+            <Card
+              type="basic with status"
+              desc="active, success and exception statuses."
+            >
               <ProgressMaker
                 bgcolor="warning"
                 progress="40"
@@ -102,7 +139,15 @@ export class Progress extends React.Component {
               <LineBtn onClick={setLineProgress}>+</LineBtn>
               <LineBtn onClick={setLineProgress}>-</LineBtn>
             </Card>
-            <Card type="Type" desc="Desc"></Card>
+            <Card type="Circular Progress" desc="Circular progress bar">
+              <BasicWrapper>
+                <CircularProgress info={circularProgress} />
+              </BasicWrapper>
+              <BtnsWrapper>
+                <PlusBtn onClick={setCircularPlus}>+</PlusBtn>
+                <MinusBtn onClick={setCircularMinus}>-</MinusBtn>
+              </BtnsWrapper>
+            </Card>
           </LayoutContainer>
         </LayoutWrapper>
       </div>
