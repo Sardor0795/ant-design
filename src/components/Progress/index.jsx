@@ -39,23 +39,41 @@ export class Progress extends React.Component {
     const setCircularPlus = (e) => {
       if (circularProgress <= 99) {
         circularProgress += 1;
-        e.target.parentElement.parentElement.children[0].children[0].style.cssText = `
-        background: conic-gradient(#7d2ae8 ${
-          circularProgress * 3.6
-        }deg, #ededed 0deg);
-        `;
-        e.target.parentElement.parentElement.children[0].children[0].children[0].innerText = `${circularProgress}%`;
+        if (circularProgress < 30) {
+          e.target.parentElement.parentElement.children[0].children[0].style.cssText = `
+          background: conic-gradient(var(--dangerColor) ${
+            circularProgress * 3.6
+          }deg, #ededed 0deg);
+          `;
+          e.target.parentElement.parentElement.children[0].children[0].children[0].innerText = `${circularProgress}%`;
+        } else {
+          e.target.parentElement.parentElement.children[0].children[0].style.cssText = `
+          background: conic-gradient(#7d2ae8 ${
+            circularProgress * 3.6
+          }deg, #ededed 0deg);
+          `;
+          e.target.parentElement.parentElement.children[0].children[0].children[0].innerText = `${circularProgress}%`;
+        }
       }
     };
     const setCircularMinus = (e) => {
       if (circularProgress >= 3) {
         circularProgress -= 1;
-        e.target.parentElement.parentElement.children[0].children[0].style.cssText = `
-        background: conic-gradient(#7d2ae8 ${
-          circularProgress * 3.6
-        }deg, #ededed 0deg);
-        `;
-        e.target.parentElement.parentElement.children[0].children[0].children[0].innerText = `${circularProgress}%`;
+        if (circularProgress < 30) {
+          e.target.parentElement.parentElement.children[0].children[0].style.cssText = `
+          background: conic-gradient(var(--dangerColor) ${
+            circularProgress * 3.6
+          }deg, #ededed 0deg);
+          `;
+          e.target.parentElement.parentElement.children[0].children[0].children[0].innerText = `${circularProgress}%`;
+        } else {
+          e.target.parentElement.parentElement.children[0].children[0].style.cssText = `
+          background: conic-gradient(#7d2ae8 ${
+            circularProgress * 3.6
+          }deg, #ededed 0deg);
+          `;
+          e.target.parentElement.parentElement.children[0].children[0].children[0].innerText = `${circularProgress}%`;
+        }
       }
     };
     return (
