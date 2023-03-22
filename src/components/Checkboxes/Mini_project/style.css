@@ -9,7 +9,6 @@
   overflow: hidden;
 }
 
-
 .checkbox__mainwrapper {
   width: 100%;
   display: flex;
@@ -29,7 +28,7 @@
   align-items: flex-start;
   margin-right: auto;
   margin-left: auto;
-  background-color: var(--info);
+  background-color: #dbf8fd;
   min-width: 300px;
   padding: 30px;
   border-radius: 20px;
@@ -53,7 +52,7 @@
   border: 2px solid rgb(31, 30, 30);
   margin-right: 10px;
   border-radius: 10px;
-  background-color: var(--dangerColor);
+  background-color: #fff;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

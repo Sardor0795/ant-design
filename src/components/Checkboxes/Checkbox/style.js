@@ -50,7 +50,8 @@ export const CheckboxLabel = styled.div`
   align-items: center;
   :hover > div {
     opacity: 1;
-    box-shadow: 0 0 2px 0 var(--primary);
+    box-shadow: 0 0 2px 0
+      ${({ checkColor }) => (checkColor ? checkColor : "var(--primary)")};
   }
 `;
 
@@ -61,7 +62,8 @@ export const CheckboxWrapper = styled.div`
   margin: 10px;
   opacity: 0.5;
   transition: opacity 0.3s ease;
-  border: 1px solid var(--info);
+  border: 1px solid
+    ${({ checkColor }) => (checkColor ? checkColor : "var(--info)")};
   border-radius: 4px;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
   ${getWSize}
@@ -72,7 +74,8 @@ export const CheckboxInner = styled.div`
   width: 100%;
   height: 100%;
   border-radius: 4px;
-  background-color: var(--primary);
+  background-color: ${({ checkColor }) =>
+    checkColor ? checkColor : "var(--primary)"};
   position: relative;
   display: none;
   align-items: center;

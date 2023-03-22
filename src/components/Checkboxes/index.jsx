@@ -4,6 +4,7 @@ import { LayoutContainer, LayoutWrapper } from "../Layout/style";
 import { CheckBoxGeneric } from "./Checkbox";
 import { MiniCheckboxProject } from "./Mini_project";
 import {
+  BasicWrapper,
   CheckboxList,
   CheckboxText,
   CheckboxTitle,
@@ -27,10 +28,37 @@ export const Checkbox = () => {
 
       <LayoutWrapper>
         <LayoutContainer>
-          <Card type="Basic" desc={"default props with differnt size and lableText"}>
-              <CheckBoxGeneric text="Large" size="large" />
-              <CheckBoxGeneric text="Medium" size="medium" />
-              <CheckBoxGeneric text="small" size="small" />
+          <Card
+            type="Basic"
+            desc={"default props with differnt size and lableText"}
+          >
+            <CheckBoxGeneric text="Large" size="large" />
+            <CheckBoxGeneric checked text="Medium" size="medium" />
+            <CheckBoxGeneric text="small" size="small" />
+          </Card>
+          <Card
+            type="With Color"
+            desc={"default props with differnt size and lableText"}
+          >
+            <BasicWrapper>
+              <CheckBoxGeneric checkColor="red" text="Large" size="large" />
+              <CheckBoxGeneric checkColor="red" text="Medium" size="medium" />
+              <CheckBoxGeneric checked checkColor="red" text="small" size="small" />
+            </BasicWrapper>
+            <BasicWrapper>
+              <CheckBoxGeneric checkColor="green" text="Large" size="large" />
+              <CheckBoxGeneric checked checkColor="green" text="Medium" size="medium" />
+              <CheckBoxGeneric checkColor="green" text="small" size="small" />
+            </BasicWrapper>
+            <BasicWrapper>
+              <CheckBoxGeneric checked checkColor="purple" text="Large" size="large" />
+              <CheckBoxGeneric
+                checkColor="purple"
+                text="Medium"
+                size="medium"
+              />
+              <CheckBoxGeneric checkColor="purple" text="small" size="small" />
+            </BasicWrapper>
           </Card>
         </LayoutContainer>
         <LayoutContainer>
@@ -39,6 +67,19 @@ export const Checkbox = () => {
             desc={"Made with css :checked style. No using JS!"}
           >
             <MiniCheckboxProject />
+          </Card>
+          <Card
+            type="Mini Project"
+            desc={"Made with css :checked style. No using JS!"}
+          >
+            <CheckBoxGeneric checked size="small" checkColor="red" text="apple"/>
+            <CheckBoxGeneric checked size="small" checkColor="purple" text="plum"/>
+            <CheckBoxGeneric checked size="small" checkColor="orange" text="apelsin"/>
+            <CheckBoxGeneric checked size="small" checkColor="blue" text="cucumber"/>
+            <CheckBoxGeneric checked size="small" checkColor="limegreen" text="grapes"/>
+            <CheckBoxGeneric checked size="small" checkColor="yellow" text="banana"/>
+            <CheckBoxGeneric checked size="small" checkColor="yellowgreen" text="pear"/>
+            <CheckBoxGeneric checked size="small" checkColor="crimson" text="cherry"/>
           </Card>
         </LayoutContainer>
       </LayoutWrapper>
