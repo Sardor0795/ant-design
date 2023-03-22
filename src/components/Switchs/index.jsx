@@ -94,11 +94,11 @@ export const Switch = () => {
             </div>
           </Card>
           <Card
-            type="Basic"
-            desc={"basic switch accepts size, bgChecked, bgNotChecked props"}
+            type="on and off"
+            desc={"on and off switch accepts textOn, textOff, size, bgChecked, bgNotChecked props"}
           >
             <div>
-              <SwitchComp onClick={toggleSwitchLarge} size="large" />
+              <SwitchComp leftInfo="on" rightInfo="off" onClick={toggleSwitchLarge} size="large" />
               <SwitchComp onClick={toggleSwitchMedium} size="medium" />
               <SwitchComp onClick={toggleSwitchSmall} size="small" />
             </div>

@@ -64,3 +64,18 @@ export const SwitchInner = styled.div`
   pointer-events: none;
   transition: 0.3s ease all;
 `;
+
+export const SwitchRightInfo = styled.span`
+  color: #fff;
+  font-size: 15px;
+  position: absolute;
+  right: 5px;
+  pointer-events: none;
+`;
+export const SwitchLeftInfo = styled.span`
+  color: #fff;
+  font-size: 15px;
+  position: absolute;
+  left: 5px;
+  pointer-events: none;
+`;
