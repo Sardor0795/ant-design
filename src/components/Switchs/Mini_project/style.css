@@ -1,10 +1,10 @@
 /* GLOBAL */
 
 :root {
-  --main-bg: #fff;
-  --body-bg: #f2f2f2;
+  --main-bg: rgb(183, 216, 236);
+  --body-bg: #ccecf2;
   --text-color: #111517;
-  --border-color: #fff;
+  --border-color: rgb(125, 121, 121);
   --focus-color: #1052e1;
 }
 
@@ -18,6 +18,9 @@
 
 .swich__minproject__wrapper {
   width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  border: var(--border);
 }
 
 .min__body {
@@ -27,8 +30,6 @@
   background-color: var(--body-bg);
   color: var(--text-color);
   font-family: "Arial", sans-serif;
-  padding: 0;
-  margin: 0;
   font-size: 16px;
   line-height: 1.5;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -63,8 +64,8 @@ button {
 .container {
   width: 100%;
   max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -96,7 +97,7 @@ button {
 
 .site-header {
   background-color: var(--main-bg);
-  padding: 30px 0;
+  padding: 20px 0;
   border-bottom: 2px solid var(--border-color);
 }
 
@@ -123,6 +124,7 @@ button {
   align-items: center;
   white-space: nowrap;
   cursor: pointer;
+  user-select: none;
   transition: color 0.3s ease;
 }
 
@@ -175,6 +177,7 @@ button {
 .site-heading {
   color: var(--text-color);
   text-align: center;
+  margin-top: 50px;
   margin-bottom: 50px;
   transition: 0.3s ease;
   cursor: pointer;
