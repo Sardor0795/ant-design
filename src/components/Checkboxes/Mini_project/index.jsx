@@ -3,7 +3,7 @@ import "./style.css";
 
 export const MiniCheckboxProject = () => {
   return (
-    <div>
+    <div className="checkbox__mainwrapper">
       <div className="fruit-box">
         <div className="fruit-wrapper">
           <label className="fruit-label">

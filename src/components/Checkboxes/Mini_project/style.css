@@ -9,6 +9,13 @@
   overflow: hidden;
 }
 
+
+.checkbox__mainwrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .fruit-box {
   display: flex;
   justify-content: space-between;
@@ -22,7 +29,7 @@
   align-items: flex-start;
   margin-right: auto;
   margin-left: auto;
-  background-color: rgb(200, 197, 197);
+  background-color: var(--info);
   min-width: 300px;
   padding: 30px;
   border-radius: 20px;
@@ -46,7 +53,7 @@
   border: 2px solid rgb(31, 30, 30);
   margin-right: 10px;
   border-radius: 10px;
-  background-color: rgb(236, 111, 111);
+  background-color: var(--dangerColor);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
