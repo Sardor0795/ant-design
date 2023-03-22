@@ -110,9 +110,9 @@ export const Switch = () => {
             desc={"tick and cross switch accepts size, bgChecked, bgNotChecked props"}
           >
             <div>
-              <SwitchComp leftInfo="on" rightInfo="x" onClick={toggleSwitchLarge} size="large" />
-              <SwitchComp leftInfo="on" rightInfo="x" onClick={toggleSwitchMedium} size="medium" />
-              <SwitchComp leftInfo="on" rightInfo="x" onClick={toggleSwitchSmall} size="small" />
+              <SwitchComp leftInfo="✔" rightInfo="✖" onClick={toggleSwitchLarge} size="large" />
+              <SwitchComp leftInfo="✔" rightInfo="✖" onClick={toggleSwitchMedium} size="medium" />
+              <SwitchComp leftInfo="✔" rightInfo="✖" onClick={toggleSwitchSmall} size="small" />
             </div>
           </Card>
         <Card
