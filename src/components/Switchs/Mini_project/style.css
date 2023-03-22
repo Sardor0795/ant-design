@@ -1,10 +1,10 @@
 /* GLOBAL */
 
 :root {
-  --main-bg: rgb(183, 216, 236);
-  --body-bg: #ccecf2;
+  --main-bg: rgb(255, 255, 255);
+  --body-bg: #ffffff;
   --text-color: #111517;
-  --border-color: rgb(125, 121, 121);
+  --border-color: rgb(168, 165, 165);
   --focus-color: #1052e1;
 }
 
@@ -35,25 +35,19 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-a {
+.swich__minproject__wrapper a {
   text-decoration: none;
 }
 
-li {
+.swich__minproject__wrapper li {
   list-style: none;
 }
 
-img {
+.swich__minproject__wrapper img {
   display: block;
 }
 
-a,
-span,
-button {
-  display: inline-block;
-}
-
-button {
+.swich__minproject__wrapper button {
   border: none;
   background: none;
   cursor: pointer;
