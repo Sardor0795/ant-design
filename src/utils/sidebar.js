@@ -7,7 +7,7 @@ import { Progress } from "../components/Progress";
 import { Inputs } from "../components/Inputs";
 import { Alert } from "../components/Alerts";
 import { Badge } from "../components/Badges";
-import { Checkbox } from "../components/Checkbox";
+import { Checkbox } from "../components/Checkboxes";
 import { Dropdown } from "../components/Dropdowns";
 import { Table } from "../components/Table";
 import { Tooltip } from "../components/Tooltips";
