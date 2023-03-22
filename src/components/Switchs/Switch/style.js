@@ -86,6 +86,7 @@ export const SwitchRightInfo = styled.span`
   right: ${({ size }) =>
     size === "large" ? "6px" : size === "medium" ? "4px" : "3px"};
   pointer-events: none;
+  user-select: none;
 `;
 export const SwitchLeftInfo = styled.span`
   color: #fff;
@@ -95,6 +96,7 @@ export const SwitchLeftInfo = styled.span`
   left: ${({ size }) =>
     size === "large" ? "6px" : size === "medium" ? "4px" : "3px"};
   pointer-events: none;
+  user-select: none;
 `;
 
 export const LoadImage = styled.span`
