@@ -36,9 +36,34 @@ export const BtnsWrapper = styled.div`
 export const PlusBtn = styled.button`
   width: 80px;
   height: 25px;
+  background-color: var(--info);
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  :active {
+    transform: translateY(2px);
+  }
+  :hover {
+    box-shadow: 0 0 2px 0 var(--info);
+  }
 `;
 
 export const MinusBtn = styled.button`
   width: 80px;
   height: 25px;
+  background-color: var(--dangerColor);
+  border: 0;
+  border-radius: 4px;
+  margin-left: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  :active {
+    transform: translateY(2px);
+  }
+  :hover {
+    box-shadow: 0 0 2px 0 var(--dangerColor);
+  }
 `;
