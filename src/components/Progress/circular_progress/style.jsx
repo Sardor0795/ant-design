@@ -51,7 +51,8 @@ export const CircularWrapper = styled.div`
   align-items: center;
   justify-content: center;
   background: conic-gradient(
-    ${({ info }) => (info < 30 ? "var(--dangerColor)" : "#7d2ae8")}
+    ${({ info, color }) =>
+        info < 30 ? "var(--dangerColor)" : color ? color : "#7d2ae8"}
       ${({ info }) => info * 3.6}deg,
     #ededed 0deg
   );
@@ -66,5 +67,6 @@ export const CircularInner = styled.div`
   justify-content: center;
   font-size: 25px;
   font-weight: bold;
-  color: ${({ info }) => (info < 30 ? "var(--dangerColor)" : "#7d2ae8")};
+  color: ${({ info, color }) =>
+    info < 30 ? "var(--dangerColor)" : color ? color : "#7d2ae8"};
 `;

@@ -1,10 +1,10 @@
 import React from "react";
 import { CircularInner, CircularWrapper } from "./style";
 
-export const CircularProgress = ({ size, info }) => {
+export const CircularProgress = ({ info, ...res }) => {
   return (
-    <CircularWrapper size={size} info={info}>
-      <CircularInner size={size} info={info}>
+    <CircularWrapper {...res} info={info}>
+      <CircularInner {...res} info={info}>
         {info ? info : null}%
       </CircularInner>
     </CircularWrapper>
