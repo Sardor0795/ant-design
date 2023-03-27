@@ -25,9 +25,10 @@ export const DisabledBtn = styled.button`
   font-size: 20px;
   color: #fff;
   background-color: blue;
+  user-select: none;
   cursor: pointer;
   border: 0;
-  
+
   border-radius: 4px;
   :active {
     transform: translateY(2px);
