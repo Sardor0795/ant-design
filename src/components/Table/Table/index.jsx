@@ -212,9 +212,9 @@ class ScrollableTable extends Component {
                           >
                             {this.state.active?.id === id ? "save" : "edit"}
                           </button>
-                          <button onClick={() => onDelete(id)} className="btn">
+                          {/* <button onClick={() => onDelete(id)} className="btn">
                             Dell
-                          </button>
+                          </button> */}
                         </td>
                       </tr>
                     );
