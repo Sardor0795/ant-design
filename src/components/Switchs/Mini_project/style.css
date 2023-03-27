@@ -90,7 +90,6 @@
 /* SITE-HEADER */
 
 .site-header {
-  background-color: var(--main-bg);
   padding: 20px 0;
   border-bottom: 2px solid var(--border-color);
 }
