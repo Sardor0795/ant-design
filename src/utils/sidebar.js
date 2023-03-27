@@ -1,7 +1,7 @@
 import Generic from "../components/Generic";
 import Buttons from "../components/Buttons";
 
-import HourImg from "../assets/icons/hour.jpg";
+import HourImg from "../assets/icons/clock-red.png";
 import CheckImg from "../assets/icons/check.png";
 import { Progress } from "../components/Progress";
 import { Inputs } from "../components/Inputs";
