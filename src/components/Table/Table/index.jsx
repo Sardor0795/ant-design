@@ -14,10 +14,10 @@ class ScrollableTable extends Component {
     };
   }
   render() {
-    const onDelete = (id) => {
-      let res = this.state.data.filter((v) => v.id !== id);
-      this.setState({ data: res });
-    };
+    // const onDelete = (id) => {
+    //   let res = this.state.data.filter((v) => v.id !== id);
+    //   this.setState({ data: res });
+    // };
     // const onChange = (e) => {
     //   this.setState({ [e.target.name]: e.target.value });
     // };
