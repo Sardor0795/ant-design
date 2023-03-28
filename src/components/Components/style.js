@@ -22,6 +22,28 @@ export const ComponentsWrapper = styled.div`
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
+  overflow-y: auto;
+  max-height: calc(100vh - var(--navbar-height) - 40px);
+  &.scroll-close::-webkit-scrollbar {
+    width: 0;
+  }
+
+  &::-webkit-scrollbar {
+    width: 2px;
+    border-radius: 25px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    /* Foreground */
+    background: green;
+    border-radius: 25px;
+  }
+
+  &::-webkit-scrollbar-track {
+    /* Background */
+    background: rgba(225, 220, 220, 0.845);
+    border-radius: 25px;
+  }
 `;
 
 export const PathLink = styled(Link)`
