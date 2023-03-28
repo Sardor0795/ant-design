@@ -26,10 +26,11 @@ export const ComponentsWrapper = styled.div`
 
 export const PathLink = styled(Link)`
   width: 90px;
+  position: relative;
   height: 40px;
   border-radius: 10px;
   display: flex;
-  margin: 5px;
+  margin: 15px;
   align-items: center;
   justify-content: center;
   color: #fff;
@@ -37,12 +38,25 @@ export const PathLink = styled(Link)`
   text-decoration: none;
   transition: opacity 0.2s ease, background-color 0.2s ease;
   background-color: #227bfeff;
-  box-shadow: 0px 0px 5px 0px #f7505eff;
+  box-shadow: 0px 0px 5px 0px
+    ${({ done }) => (done ? "#8EDFB2FF" : "#f7505eff")};
   :hover {
-    background-color: #f7505eff;
+    background-color: ${({ done }) => (done ? "#8EDFB2FF" : "#f7505eff")};
+    & img {
+      transform: translate(15px, -10px);
+    }
   }
   :active {
     transform: translateY(2px);
     opacity: 0.8;
+  }
+  & img {
+    position: absolute;
+    top: -15px;
+    right: 0;
+    z-index: -1;
+    width: 20px;
+    background: transparent;
+    transition: transform 0.3s ease;
   }
 `;
