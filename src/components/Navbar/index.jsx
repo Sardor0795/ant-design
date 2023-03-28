@@ -15,7 +15,7 @@ export const Navbar = () => {
   return (
     <Container>
       <UserMainImg />
-      <User to={"/components"}>Antd Library</User>
+      <User to={"/components"}>AntD Library</User>
       <Wrapper>
         {navbar.map((value) => (
           <Link key={value.id} to={value.path}>
