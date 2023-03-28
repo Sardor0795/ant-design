@@ -63,7 +63,8 @@ export const PathLink = styled(Link)`
   box-shadow: 0px 0px 5px 0px
     ${({ done }) => (done ? "#8EDFB2FF" : "#f7505eff")};
   :hover {
-    background-color: ${({ done }) => (done ? "#8EDFB2FF" : "#f7505eff")};
+    background-color: ${({ done }) =>
+      done === "true" ? "#8EDFB2FF" : "#f7505eff"};
     & img {
       transform: translate(15px, -10px);
     }

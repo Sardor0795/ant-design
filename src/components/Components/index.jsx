@@ -14,7 +14,7 @@ export const Generic = () => {
 
       <ComponentsWrapper>
         {sidebar.map((v) => (
-          <PathLink key={v.id} to={v.path} done={v.fulfilled}>
+          <PathLink key={v.id} to={v.path} done={v.fulfilled.toString()}>
             {v.title}
             <img src={v.fulfilled ? CheckImg : ClockImg} alt="img" />
           </PathLink>
